@@ -1,10 +1,10 @@
 package hello;
 import java.util.Scanner;
-public class ´ÕÓ²±Ò {
+public class å‡‘ç¡¬å¸ {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int amount = in.nextInt();
-		OUT: //±êºÅ
+		OUT: //æ ‡å·
 		for( int one = 0; one<=amount; ++one)
 		{
 			for( int five = 0; five<=amount/5; ++five)
@@ -15,7 +15,7 @@ public class ´ÕÓ²±Ò {
 					{
 						if( one+five*5+ten*10+twenty*20 == amount)
 						{
-							System.out.println(one+"ÕÅ1Ôª£¬"+five+"ÕÅ5Ôª£¬"+ten+"ÕÅ10Ôª£¬"+twenty+"ÕÅ20Ôª->"+amount);
+							System.out.println(one+"å¼ 1å…ƒï¼Œ"+five+"å¼ 5å…ƒï¼Œ"+ten+"å¼ 10å…ƒï¼Œ"+twenty+"å¼ 20å…ƒ->"+amount);
 							break OUT;
 						}
 					}
