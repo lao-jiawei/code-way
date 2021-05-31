@@ -1,7 +1,7 @@
 package hello;
 import java.util.Scanner;
-public class ÅĞ¶ÏËØÊı {
-	//ÅĞ¶ÏËØÊı
+public class åˆ¤æ–­ç´ æ•° {
+	//åˆ¤æ–­ç´ æ•°
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 //		int n = in.nextInt();
@@ -13,21 +13,21 @@ public class ÅĞ¶ÏËØÊı {
 				if( n % i == 0)
 				{
 					isPrime = 0;
-					System.out.println(n+"²»ÊÇËØÊı,i="+i);
+					System.out.println(n+"ä¸æ˜¯ç´ æ•°,i="+i);
 					break;
 				}
 			}
 			if( isPrime == 1) 
 			{
-				System.out.println(n+"ÊÇËØÊı");
+				System.out.println(n+"æ˜¯ç´ æ•°");
 			}
 			else 
 			{
-//				System.out.println(n+"²»ÊÇËØÊı");
+//				System.out.println(n+"ä¸æ˜¯ç´ æ•°");
 			}
 		}
 	}
-		//ÅĞ¶ÏÊÇ·ñÄÜ±»ÒÑÖªµÄ<xµÄËØÊıÕû³ı
+		//åˆ¤æ–­æ˜¯å¦èƒ½è¢«å·²çŸ¥çš„<xçš„ç´ æ•°æ•´é™¤
 /*	public static void main(String[] args) {
 			Scanner in = new Scanner(System.in);
 			int[] primes = new int[50];
