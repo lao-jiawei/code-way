@@ -1,6 +1,6 @@
 package hello;
 import java.util.Scanner;
-public class ²ÂÊıÓÎÏ· {
+public class çŒœæ•°æ¸¸æˆ {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int number = (int)(Math.random()*100+1);
@@ -11,13 +11,13 @@ public class ²ÂÊıÓÎÏ· {
 			count = count +1;
 			if(a>number)
 			{
-				System.out.println("Æ«´ó");
+				System.out.println("åå¤§");
 			}
 			else if(a<number)
 			{
-				System.out.println("Æ«Ğ¡");
+				System.out.println("åå°");
 			}
 		}while(a!=number);
-		System.out.println("¹§Ï²Äã²Â¶ÔÁË£¬Äã²ÂÁË"+count+"´Î");
+		System.out.println("æ­å–œä½ çŒœå¯¹äº†ï¼Œä½ çŒœäº†"+count+"æ¬¡");
 		}
 }
