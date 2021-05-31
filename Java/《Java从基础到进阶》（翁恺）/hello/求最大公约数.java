@@ -1,7 +1,7 @@
 package hello;
 import java.util.Scanner;
-public class Çó×î´ó¹«Ô¼Êý {
-	//	Çó×î´ó¹«Ô¼Êý
+public class æ±‚æœ€å¤§å…¬çº¦æ•° {
+	//	æ±‚æœ€å¤§å…¬çº¦æ•°
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int a = in.nextInt();
@@ -14,11 +14,11 @@ public class Çó×î´ó¹«Ô¼Êý {
 					gcd = i;
 				}
 		}
-		System.out.println(a+"ºÍ"+b+"µÄ×î´ó¹«Ô¼ÊýÊÇ"+gcd);
+		System.out.println(a+"å’Œ"+b+"çš„æœ€å¤§å…¬çº¦æ•°æ˜¯"+gcd);
 		}
 	
 
-	//	Çó×î´ó¹«Ô¼Êý£¨Õ·×ªÏà³ý·¨£©
+	//	æ±‚æœ€å¤§å…¬çº¦æ•°ï¼ˆè¾—è½¬ç›¸é™¤æ³•ï¼‰
 /*	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int a = in.nextInt();
@@ -32,7 +32,7 @@ public class Çó×î´ó¹«Ô¼Êý {
 			a = b;
 			b = r;
 		}
-		System.out.println(oa+"ºÍ"+ob+"µÄ×î´ó¹«Ô¼ÊýÊÇ"+a);
+		System.out.println(oa+"å’Œ"+ob+"çš„æœ€å¤§å…¬çº¦æ•°æ˜¯"+a);
 		}
 	*/
 }
