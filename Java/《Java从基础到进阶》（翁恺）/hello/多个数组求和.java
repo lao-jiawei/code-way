@@ -1,6 +1,6 @@
 package hello;
 import java.util.Scanner;
-public class 多个数组求和 {
+public class 露脿赂枚脢媒脳茅脟贸潞脥 {
 	public static void sum(int a,int b)
 	{
 		int i;
@@ -10,7 +10,7 @@ public class 多个数组求和 {
 		{
 			sum+=i;
 		}
-		System.out.println(a+"到"+b+"的和是"+sum);
+		System.out.println(a+"碌陆"+b+"碌脛潞脥脢脟"+sum);
 	}
 	
 	public static void main(String[] args) {
