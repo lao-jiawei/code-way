@@ -2,6 +2,8 @@ package JAVA基础;
 
 import java.util.Scanner;
 
+import java.util.Arrays;
+
 public class HelloWorld {
 //练习-求和
 //	public static void main(String[] args) {
@@ -422,5 +424,92 @@ public class HelloWorld {
 //	}
 	
 //练习-合并数组
+//	public static void main(String[] args) {
+//		int alength =(int) (Math.random()*10);
+//		int blength =(int) (Math.random()*10);
+//		int []a = new int[alength];
+//		int []b = new int[blength];
+//		int []c = new int[alength+blength];
+//
+//		System.out.println("数组a的内容：");
+//		for(int i=0;i<a.length;i++) {
+//			a[i]= (int) (Math.random() * 100);
+//			System.out.print(a[i]+" ");
+//		}
+//		System.out.println(" ");
+//		
+//		System.out.println("数组b的内容：");
+//		for(int i=0;i<b.length;i++) {
+//			b[i]= (int) (Math.random() * 100);
+//			System.out.print(b[i]+" ");
+//		}
+//		System.out.println(" ");
+//		
+//		System.arraycopy(a, 0, c, 0, a.length);
+//		System.arraycopy(b, 0, c, a.length,b.length);
+//		
+//		System.out.println("数组c的内容：");
+//		for(int each:c) {
+//			System.out.print(each+" ");
+//		}
+//	}
 	
+//练习-二维数组
+//	public static void main(String[] args) {
+//		int [][] a = new int[5][5];
+//		for(int i=0 ;i<5;i++) {
+//			for(int j = 0 ;j<5;j++) {
+//				a[i][j]	=(int) (Math.random() * 100);
+//				System.out.print(a[i][j]+"	");
+//			}
+//			System.out.println(" ");
+//		}
+//		
+//		int x=0,y=0;
+//		int max = a[0][0];
+//		for(int i=0 ;i<5;i++) {
+//			for(int j = 0 ;j<5;j++) {
+//				if(max<a[i][j]) {
+//					max=a[i][j];
+//					x=i;
+//					y=j;
+//				}
+//			}
+//		}
+//		System.out.println("找出来最大的是："+max);
+//		System.out.println("其坐标是["+x+"] ["+y+"]");
+//	}
+	
+//练习-二维数组排序
+//	public static void main(String[] args) {
+//		int [][]a = new int[5][8];
+//		int []b = new int [5*8];
+//		System.out.println("整理前数组：");
+//		for(int i = 0;i<5;i++) {
+//			for(int j = 0;j<8;j++) {
+//				a[i][j]	=(int) (Math.random() * 100);
+//				System.out.print(a[i][j]+"	");
+//			}
+//			System.out.println(" ");
+//		}
+//		
+//		System.out.println(" ");
+//		for(int i=0;i<5;i++) {
+//			System.arraycopy(a[i],0, b, i*8, 8);
+//		}
+//		Arrays.sort(b);
+//		
+//		for(int i=0;i<5;i++) {
+//			System.arraycopy(b, 8*i, a[i], 0, 8);
+//		}
+//		
+//		
+//		System.out.println("整理后数组：");
+//		for(int []each:a) {
+//			for(int j:each) {
+//				System.out.print(j+"	");
+//			}
+//			System.out.println();
+//		}
+//	}
 } 
