@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>lao-jiawei</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		div{
+			width: 1200px;
+		}
+		body{
+			background-image: url("images/body.gif");
+		}
+		.cantainer{
+			margin:0 auto;
+		}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+		#nav a{
+			display: inline-block;
+			font-family: "黑体";
+			font-size: 16px;
+			text-align: center;
+			background-color: white;
+			width: 80px;
+			height: 30px;
+			padding: 5px;
+		}
+		#nav a:hover{
+			color:white;
+			background-color: red;
+		}
+		#head{
+			height: 70px;
+			background-color:#F5F5F5;
+		}
+		#nav{
+			width:960px; 
+			display: inline;
+			background-color: white;
+			border-top: 10px black solid;
+			position:absolute;
+			margin-top:20px;
+			margin-left: 10px;
+		}
+		#focus{
+			text-align: right;
+			background-color: #ECECEE;
+			padding: 0;
+		}
+		.searchbar{
+			height: 45px;
+			background-color:#FAFAFA;
+		}
+		input{
+			padding-left:5px;
+			display: inline-block;
+		}
+		#location p{
+			padding-top: 10px;
+			font-size:14px;
+		}
+		#search{
+			position: relative;
+			right: 50px;
+			top: -25px;
+		}
+		#search p{
+			font-size: 16px;
+			font-weight: bold;
+			color: red;
+			display: inline;
+			position: relative;
+			right: -850px;
+			padding: 15px;
+		}
+		.text{
+			width: 1060px;
+			height:700px;
+			background-color: white;
+			padding: 40px 70px;
+		}
+		#textleft{
+			width: 270px;
+			height: 220px;
+			background-color:#F9F9F9;
+			background-image:url("images/listhead.gif");
+			background-size: 350px 70px;
+			background-position: top;
+			background-repeat: no-repeat;
+			border-image: url("images/listfoot.gif");
+			padding: 10px; 
+		}
+		#textleft ul{
+			list-style-type: circle;
+			list-style-position: inside;
+			margin:30px 5px;
+		}
+		#textleft li{
+			padding:5px;
+		}
+		#textleft p{
+			color:white;
+			margin:10px 5px;
+		}
+		#textright{
+			width: 730px;
+			background-color:white;
+			position: relative;
+			left: 380px;
+			top: -230px;
+			height: 550px;
+		}
+		#textright strong{
+			font-size: 25px;
+			display:inline;
+		}
+		#textright p{
+			font-weight: bold;
+			color: gray;
+			display: inline;
+			margin: 10px;
+		}
+		#textright ul{
+			list-style-type: square;
+			list-style-position: inside;
+		}
+		#textright li{
+			padding:3px;
+		}
+		hr{
+			border: 0.5px dashed;
+		}
+		#textright p:nth-last-child(1){
+			color:black;
+			font-weight: bold;
+		}
+		#redmark{
+			color:red;
+		}
+/*
+		#textright hr:first-child{
+			border: 1px solid;
+		} 
+*/
+		#foot{
+			height:100px;
+			background-color: #B2A695;
+		}
+		#foot p{
+			font-size: 12px;
+			text-align: center;
+			padding: 1em;
+		}
+	</style>
+</head>
+	
+<body>
+	<div class="cantainer">
+		<div id="head">
+				<img src="images/logo.gif" />
+			<div id="nav">
+				<a href="#">首页</a>
+				<a href="#">集团概况</a>
+				<a href="#">新闻中心</a>
+				<a href="#">产品服务</a>
+				<a href="#">企业文化</a>
+				<a href="#">综合业务</a>
+				<a href="#">品牌建设</a>
+				<a href="#">人力资源</a>
+				<a href="#">国际合作</a>
+			</div>
+		</div>
+		<div id="focus">
+			<img src="images/zbanner.gif" height="230px"/>
+		</div>
+		<div class="searchbar">
+			<div id="location">
+			<p>□您目前的位置：首页>>新闻中心</p>
+			</div>
+			<div id="search">
+				<p>站内搜索:<input type="text" height="23px"></input><input type="image" src="images/top_search_btn.jpg" height="23px" width="70px"></input></p>
+			</div>
+		</div>
+		<div class="text">
+			<div id="textleft">
+				<p>>新闻中心</p>
+				<ul>
+					<li><a href="#">集团要闻</a></li>
+					<hr/>
+					<li><a href="#">经营动态</a></li>
+					<hr/>
+					<li><a href="#">企业专题</a></li>
+					<hr/>
+					<li><a href="#">项目新闻</a></li>
+					<hr/>
+				</ul>
+			</div>
+			<div id="textright">
+				<strong>集团要闻</strong><p>Group News</p>
+				<hr/>
+				<ul>
+					<li><a href="#">中国保利集团副总经理国强一行视察青岛公司</a></li>
+					<hr/>
+					<li><a href="#">郑州市委书记连维良一行视察郑州保利百合项目</a></li>
+					<hr/>
+					<li><a href="#">保利集团总经理张振高一行视察辽宁公司</a></li>
+					<hr/>
+					<li><a href="#">中国保利集团副总经理国强一行视察浙江公司</a></li>			<hr/>
+					<li><a href="#">中国保利集团总经理张振高一行视察广东　华南公司</a></li>
+					<hr/>
+					<li><a href="#">中国保利集团副总经理国强一行视察武汉公司</a></li>
+					<hr/>
+					<li><a href="#">中国保利集团副总经理国强一行考察保利东江首府</a></li>
+					<hr/>
+					<li><a href="#">中国保利集团董事长陈洪生视察成都公司</a></li>				<hr/>
+					<li><a href="#">国资委监事会主席时希平一行赴武汉公司视察</a></li>
+					<hr/>
+					<li><a href="#">海心沙相约宋祖英 保利和乐中国完美落幕</a></li>
+					<hr/>
+					<li><a href="#">陈洪生董事长等领导一行抵汉参加央企与地方政府合作发展洽谈会并视察项目</a></li>
+					<hr/>
+					<li><a href="#">中国保利集团副总经理国强一行考察成都公司</a></li>			<hr/>
+					<li><a href="#">保利地产荣获“2011中国房地产行业领导公司品牌”</a></li>
+					<hr/>
+					<li><a href="#">保利地产总经理朱铭新一行视察武汉公司</a></li>
+					<hr/>
+					<li><a href="#">保利地产董事长宋广菊一行视察福建公司</a></li>
+					<hr/>
+					<li><a href="#">广东省委委员调研团考察保利银滩</a></li>
+					<hr/>
+					<li><a href="#">保利地产2011年新员工入职培训圆满结束</a></li>
+					<hr/>
+					<li><a href="#">合肥保利香槟国际开工盛典隆重举行</a></li>
+					<hr/>
+					<li><a href="#">国资委监事会主席时希平一行赴保利地产北京公司调研</a></li>
+					<hr/>
+					<li><a href="#">广东省省长黄华华视察调研保利银滩</a></li>
+					<hr/>
+				</ul>
+				<p>共<span id="redmark">10</span>页<span id="redmark">196</span>条记录 上一页 1 2 3 4 5 下一页</p>
+			</div>
+		</div>
+		<div id="foot">
+			<p>版权信息:©正大软件学院.软件技术系所有</p>
+			<p>2010-2020</p>
+		</div>
+	</div>
+</body>
+</html>
