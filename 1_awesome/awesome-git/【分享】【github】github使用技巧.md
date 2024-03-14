@@ -144,19 +144,22 @@ git clone 克隆地址 "目标文件名"
 
 <br>
 
-# 如何创建分支？
+# 分枝相关
 
-【格式】
+## 删除本地分枝
 
-````shell
-git checkout -b 分支名
+````bash
+git branch -d <分枝名>
 ````
 
-<br>
+## 创建分支
 
-# 提交
+````bash
+git checkout -b <分支名>
+````
 
+## 本地创建获取远程分枝
 
-
-# 结语
+````bash
+````
 

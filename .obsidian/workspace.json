@@ -1,0 +1,183 @@
+{
+  "main": {
+    "id": "b5674664c2634684",
+    "type": "split",
+    "children": [
+      {
+        "id": "95b17d4a2fb1fdd8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c441a9fa2eadb884",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_awesome/awesome-freecodecamp/【前端开发库】React.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "94fc3754cd9b0cab",
+    "type": "split",
+    "children": [
+      {
+        "id": "634487c0c415288c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c01b937b1daa1f29",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3301206878cdaed3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "55f1a7d7da62f0bd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8085fd67185b5748",
+    "type": "split",
+    "children": [
+      {
+        "id": "010eaf3142813e51",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "04a188118ace34b2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "1_awesome/awesome-freecodecamp/【前端开发库】React.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b9409c1da3dae99d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "1_awesome/awesome-freecodecamp/【前端开发库】React.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "702bdcd760be7a4c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "2bb249c7af7d2fdc",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "1_awesome/awesome-freecodecamp/【前端开发库】React.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "c441a9fa2eadb884",
+  "lastOpenFiles": [
+    "1_awesome/awesome-algorithm/《大话数据结构》.md",
+    "1_awesome/awesome-algorithm/《算法导论》.md",
+    "1_awesome/awesome-frontend/【S】前端优化技巧.md",
+    "1_awesome/awesome-webpack",
+    "1_awesome/awesome-git/【分享】【github】github使用技巧.md",
+    "1_awesome/awesome-frontend",
+    "1_awesome/未命名文件夹",
+    "1_awesome/awesome-git/【练习笔记】【git】【learngitbranching】git线上实战练习.md",
+    "1_awesome/awesome-git/【github】【S】markdown文件内联跳转.md",
+    "1_awesome/awesome-git/【笔记】【git】【狂神说Java】Git最新教程通俗易懂 -学习笔记.md",
+    "1_awesome/awesome-mac/【S】使用技巧.md",
+    "1_awesome/awesome-cs/【N】计算机网络.md",
+    "1_awesome/awesome-mac",
+    "1_awesome/awesome-terminal/【S】zsh使用.md",
+    "1_awesome/awesome-terminal/未命名文件夹",
+    "1_awesome/awesome-terminal",
+    "1_awesome/awesome-c/《C语言程序设计》.md",
+    "1_awesome/awesome-freecodecamp/【前端开发库】React.md",
+    "1_awesome/awesome-npm/mockjs/【Mock.js】【S】常用数据.md",
+    "1_awesome/awesome-cs/Internet",
+    "1_awesome/awesome-cs",
+    "1_awesome/awesome-npm/mockjs/mock.js语法.md",
+    "1_awesome/awesome-npm/mockjs/mock常用示例.md",
+    "1_awesome/awesome-npm/【学习笔记】【Ajax】【尚硅谷】3小时Ajax入门到精通.md",
+    "1_awesome/awesome-vim/vscode+vim.md",
+    "1_awesome/awesome-vue/【学习笔记】【尚硅谷】Vue2.0+Vue3.0全套教程丨vuejs从入门到精通.md",
+    "1_awesome/awesome-vue/【学习笔记】【狂神说Java】Vue最新快速上手教程通俗易懂.md",
+    "1_awesome/awesome-java/《Java编程思想》.md",
+    "1_awesome/awesome-javascript/【JSchallenger】/【笔记】【JavaScript】JSchallenger-Arrays对象-练习笔记.md",
+    "1_awesome/awesome-javascript/【笔记】【JavaScript】RegExp对象.md",
+    "1_awesome/awesome-javascript/【面试】【ES6】const,let,var.md"
+  ]
+}
