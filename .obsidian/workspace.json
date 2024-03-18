@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-git/使用技巧.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-git/【笔记】【git】【狂神说Java】Git最新教程通俗易懂 -学习笔记.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-git/使用技巧.md",
+                "file": "1_awesome/awesome-git/【笔记】【git】【狂神说Java】Git最新教程通俗易懂 -学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-git/使用技巧.md",
+                "file": "1_awesome/awesome-git/【笔记】【git】【狂神说Java】Git最新教程通俗易懂 -学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-git/使用技巧.md"
+                "file": "1_awesome/awesome-git/【笔记】【git】【狂神说Java】Git最新教程通俗易懂 -学习笔记.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "aff58685887bdce6",
   "lastOpenFiles": [
+    "1_awesome/awesome-git/【分享】【github】github使用技巧.md",
+    "1_awesome/awesome-git/【练习笔记】【git】【learngitbranching】git线上实战练习.md",
+    "1_awesome/awesome-git/【github】【S】markdown文件内联跳转.md",
+    "1_awesome/awesome-git/【S】gitignore设置.md",
+    "1_awesome/awesome-git/使用技巧.md",
     "未命名文件夹",
     "README.md",
-    "1_awesome/awesome-git/使用技巧.md",
     "1_awesome/awesome-git/【笔记】【git】【狂神说Java】Git最新教程通俗易懂 -学习笔记.md",
     "1_awesome/awesome-freecodecamp/【前端开发库】React.md",
     "1_awesome/awesome-freecodecamp/【freeCodeCamp】基础Javascript.md",
@@ -160,11 +164,8 @@
     "1_awesome/awesome-algorithm/《算法导论》.md",
     "1_awesome/awesome-frontend/【S】前端优化技巧.md",
     "1_awesome/awesome-webpack",
-    "1_awesome/awesome-git/【分享】【github】github使用技巧.md",
     "1_awesome/awesome-frontend",
     "1_awesome/未命名文件夹",
-    "1_awesome/awesome-git/【练习笔记】【git】【learngitbranching】git线上实战练习.md",
-    "1_awesome/awesome-git/【github】【S】markdown文件内联跳转.md",
     "1_awesome/awesome-mac/【S】使用技巧.md",
     "1_awesome/awesome-cs/【N】计算机网络.md",
     "1_awesome/awesome-mac",
