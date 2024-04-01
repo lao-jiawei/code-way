@@ -34,7 +34,133 @@ git clone 克隆地址 "目标文件名"
 
 <br>
 
-# 如何提交本地文件到远程仓库？
+# 配置相关
+
+## 更改本地提交人
+
+1. 查看个人信息是否跟github设置里的一样
+
+   ````bash
+   git show
+   ````
+
+2. 修改邮箱
+
+   ````shell
+   git config --global user.email "youremail@email.com"
+   ````
+
+3. 再次确认
+
+   ````shell
+   git config --global user.email
+   ````
+
+# 分枝相关
+
+## 删除本地分枝
+
+````bash
+git branch -d <分枝名>
+````
+
+## 创建分支
+
+````bash
+git checkout -b <分支名>
+````
+
+## 本地创建分枝关联远程分枝
+
+1. pull远程分枝索引
+2. 创建本地分枝与远程分枝关联
+
+````bash
+git checkout -b {本地分枝名} origin/{需要关联的远程分枝名}
+````
+
+# 项目相关
+
+## 子仓库相关
+
+### 在已有项目中添加子仓库
+
+1. 进入目标项目路径
+2. 关联子仓库
+
+````bash
+git submodule add {仓库地址} {文件名}
+````
+
+### 清除子仓库
+
+````bash
+git rm --cached {创建的子仓库文件名}
+````
+
+【使用场景】
+
+* 创建子仓库位置错误
+
+### 修改子项目内容
+
+> 方法一：单独修改项目仓库
+
+【使用场景】
+
+* 一次修改多处使用。
+
+> 方法二：直接在项目引用的子仓库中修改
+
+1. 先进入子仓库
+2. 查看分枝，若不是主分枝则切换至主分枝。
+3. 修改结束后走正常提交流程。
+4. 进入主项目更新子仓库引入版本。
+5. 提交主项目引用子项目索引。
+
+【使用场景】
+
+* 在项目组仓库中修改引用的子仓库
+
+## 将本地项目绑定远程仓库
+
+1. 在本地项目中`git bash`
+
+   ````shell
+   git remote
+   ````
+
+2. 复制远程仓库SSH
+
+   ```shell
+   git remote add origin 地址
+   ```
+
+3. 查看当前
+
+   ````shell
+   git remote
+   ````
+
+4. 将项目内容提交到远程仓库
+
+   ````shell
+   git push origin master
+   ````
+
+5. 创建开发分支
+
+   ````shell
+   git checkout -b dev
+   ````
+
+6. 提交开发分支
+
+   ````shell
+   git push origin dev
+   ````
+
+## 提交本地文件到远程仓库
 
 【前提】
 
@@ -79,87 +205,4 @@ git clone 克隆地址 "目标文件名"
    $ git push -u origin master
    ````
 
-
 <br>
-
-# 如何更改本地提交人？
-
-1. 查看个人信息是否跟github设置里的一样
-
-   ````bash
-   git show
-   ````
-
-2. 修改邮箱
-
-   ````shell
-   git config --global user.email "youremail@email.com"
-   ````
-
-3. 再次确认
-
-   ````shell
-   git config --global user.email
-   ````
-
-<br>
-
-# 如何将本地项目绑定远程仓库？
-
-1. 在本地项目中`git bash`
-
-   ````shell
-   git remote
-   ````
-
-2. 复制远程仓库SSH
-
-   ```shell
-   git remote add origin 地址
-   ```
-
-3. 查看当前
-
-   ````shell
-   git remote
-   ````
-
-4. 将项目内容提交到远程仓库
-
-   ````shell
-   git push origin master
-   ````
-
-5. 创建开发分支
-
-   ````shell
-   git checkout -b dev
-   ````
-
-6. 提交开发分支
-
-   ````shell
-   git push origin dev
-   ````
-
-<br>
-
-# 分枝相关
-
-## 删除本地分枝
-
-````bash
-git branch -d <分枝名>
-````
-
-## 创建分支
-
-````bash
-git checkout -b <分支名>
-````
-
-## 本地创建获取远程分枝
-
-````bash
-````
-
