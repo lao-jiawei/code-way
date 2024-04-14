@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【jQuery】【菜鸟编程】学习笔记.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "20a7d48da3db0025",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
+                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
+                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
+                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md"
+                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md"
               }
             }
           }
@@ -159,8 +146,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "20a7d48da3db0025",
+  "active": "eaede945fbc6cd06",
   "lastOpenFiles": [
+    "1_awesome/awesome-npm/【ms】【SCN】ms库源码解读.md",
+    "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
+    "1_awesome/awesome-react/【学习笔记】【React】【2022最新】4小时带你快速入门React全家桶.md",
+    "1_awesome/awesome-npm/【学习笔记】【Ajax】【尚硅谷】3小时Ajax入门到精通.md",
+    "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
+    "1_awesome/awesome-npm/【npm】【S】查看依赖库相关信息.md",
+    "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
+    "1_awesome/awesome-npm/【学习知识】【尚硅谷】【axios】尚硅谷Web前端axios入门与源码解析.md",
     "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
     "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【菜鸟编程】HTML-DOM.md",
     "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
@@ -179,14 +174,6 @@
     "1_awesome/awesome-javascript/【面向面试】/原型与原型链.md",
     "1_awesome/awesome-javascript/【面向开发】/匿名函数的定义和调用.md",
     "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景.md",
-    "1_awesome/awesome-javascript/【面向开发】/函数的声明和调用.md",
-    "1_awesome/awesome-javascript/【面向开发】/对象Object的创建和定义属性的方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/对象Object的常见操作.md",
-    "1_awesome/awesome-javascript/【面向开发】/创建数组array的方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/遍历数组array方法.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】Web前端ES6教程，涵盖ES6-ES11.md",
-    "1_awesome/awesome-javascript/【学习笔记】【JavaScript】.md",
     "1_awesome/awesome-javascript/【面向学习】",
     "1_awesome/awesome-javascript/【面向开发】",
     "1_awesome/awesome-javascript/【面向面试】",
