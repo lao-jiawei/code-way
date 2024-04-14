@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "f0dc3ea05671e439",
+        "id": "2138c271620063e2",
         "type": "tabs",
         "children": [
           {
-            "id": "143f37741dea5ef4",
+            "id": "eaede945fbc6cd06",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【S】会改变源数据方法.md",
-                "mode": "source",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【jQuery】【菜鸟编程】学习笔记.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "20a7d48da3db0025",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "git",
+                "query": "【S】",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【S】会改变源数据方法.md",
+                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【S】会改变源数据方法.md",
+                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【S】会改变源数据方法.md"
+                "file": "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md"
               }
             }
           }
@@ -146,43 +159,43 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "143f37741dea5ef4",
+  "active": "20a7d48da3db0025",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/对象Object的常见操作.md",
-    "1_awesome/awesome-javascript/【S】会改变源数据方法.md",
-    "1_awesome/awesome-javascript/对象Object的创建和定义属性的方法.md",
-    "1_awesome/awesome-javascript/创建数组array的方法.md",
-    "1_awesome/awesome-javascript/遍历数组array方法.md",
-    "1_awesome/awesome-javascript/proxy对象.md",
-    "1_awesome/awesome-javascript/【N】JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【菜鸟编程】HTML-DOM.md",
+    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
+    "1_awesome/awesome-javascript/【面向面试】/javascript中的单线程和事件循环机制.md",
+    "1_awesome/awesome-javascript/【面向面试】/【面试】【ES6】const,let,var.md",
+    "1_awesome/awesome-javascript/【面向面试】/【S】Promise.all和Promise.allSettled的区别.md",
+    "1_awesome/awesome-javascript/【面向面试】/【面试】【JavaScript】sort背后的原理.md",
+    "【I】ES演变新特性.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【jQuery】【菜鸟编程】学习笔记.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】JavaScript高级教程(javascript实战进阶)-学习笔记.md",
     "1_awesome/awesome-javascript/【Javascript扫盲】20220329.md",
-    "1_awesome/awesome-javascript/【学习笔记】【JavaScript】【尚硅谷】JavaScript高级教程(javascript实战进阶)-学习笔记.md",
-    "1_awesome/awesome-javascript/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
-    "1_awesome/awesome-javascript/【学习笔记】【JavaScript】【菜鸟编程】HTML-DOM.md",
+    "1_awesome/awesome-javascript/函数参数占位符.md",
+    "1_awesome/awesome-javascript/proxy对象.md",
+    "1_awesome/awesome-javascript/【面向开发】/javascript实现继承.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向面试】/原型与原型链.md",
+    "1_awesome/awesome-javascript/【面向开发】/匿名函数的定义和调用.md",
+    "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景.md",
+    "1_awesome/awesome-javascript/【面向开发】/函数的声明和调用.md",
+    "1_awesome/awesome-javascript/【面向开发】/对象Object的创建和定义属性的方法.md",
+    "1_awesome/awesome-javascript/【面向开发】/对象Object的常见操作.md",
+    "1_awesome/awesome-javascript/【面向开发】/创建数组array的方法.md",
+    "1_awesome/awesome-javascript/【面向开发】/遍历数组array方法.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】Web前端ES6教程，涵盖ES6-ES11.md",
     "1_awesome/awesome-javascript/【学习笔记】【JavaScript】.md",
-    "1_awesome/awesome-javascript/【面试】【JavaScript】sort背后的原理.md",
-    "1_awesome/awesome-javascript/【面试】【ES6】const,let,var.md",
-    "1_awesome/awesome-javascript/【笔记】【JavaScript】RegExp对象.md",
-    "1_awesome/awesome-javascript/javascript中的单线程和事件循环机制.md",
-    "1_awesome/awesome-git/【分享】【github】github使用技巧.md",
-    "1_awesome/awesome-git/【分享】【github】github使用技巧~.md",
-    "1_awesome/awesome-git/【练习笔记】【git】【learngitbranching】git线上实战练习.md",
-    "1_awesome/awesome-git/【github】【S】markdown文件内联跳转.md",
-    "1_awesome/awesome-mac/【S】使用技巧.md",
-    "1_awesome/awesome-vscode/【快捷键】.md",
-    "1_awesome/awesome-vim/vscode+vim.md",
-    "1_awesome/awesome-git/【S】commit规范.md",
+    "1_awesome/awesome-javascript/【面向学习】",
+    "1_awesome/awesome-javascript/【面向开发】",
+    "1_awesome/awesome-javascript/【面向面试】",
     "1_awesome/awesome-vscode",
-    "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
-    "1_awesome/awesome-npm/【学习笔记】【Ajax】【尚硅谷】3小时Ajax入门到精通.md",
     "未命名文件夹",
     "1_awesome/awesome-webpack",
     "1_awesome/awesome-frontend",
     "1_awesome/未命名文件夹",
     "1_awesome/awesome-mac",
-    "1_awesome/awesome-terminal/未命名文件夹",
-    "1_awesome/awesome-terminal",
-    "1_awesome/awesome-cs/Internet",
-    "1_awesome/awesome-cs"
+    "1_awesome/awesome-terminal/未命名文件夹"
   ]
 }
