@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "2138c271620063e2",
+        "id": "0d769ef606738783",
         "type": "tabs",
         "children": [
           {
-            "id": "eaede945fbc6cd06",
+            "id": "bbd3bc55d58add9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md"
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md"
               }
             }
           }
@@ -146,19 +146,24 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "eaede945fbc6cd06",
+  "active": "bbd3bc55d58add9b",
   "lastOpenFiles": [
+    "1_awesome/awesome-algorithm/《大话数据结构》.md",
+    "1_awesome/awesome-react/【SCN】useState源码解读.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
+    "1_awesome/awesome-react/【Ahook】【SCN】Ahook库源码.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【菜鸟编程】HTML-DOM.md",
+    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
+    "1_awesome/awesome-c/《C语言程序设计》.md",
+    "1_awesome/awesome-algorithm/《算法导论》.md",
+    "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
+    "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
     "1_awesome/awesome-npm/【ms】【SCN】ms库源码解读.md",
     "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
     "1_awesome/awesome-react/【学习笔记】【React】【2022最新】4小时带你快速入门React全家桶.md",
     "1_awesome/awesome-npm/【学习笔记】【Ajax】【尚硅谷】3小时Ajax入门到精通.md",
-    "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
     "1_awesome/awesome-npm/【npm】【S】查看依赖库相关信息.md",
-    "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
     "1_awesome/awesome-npm/【学习知识】【尚硅谷】【axios】尚硅谷Web前端axios入门与源码解析.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【菜鸟编程】HTML-DOM.md",
-    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
     "1_awesome/awesome-javascript/【面向面试】/javascript中的单线程和事件循环机制.md",
     "1_awesome/awesome-javascript/【面向面试】/【面试】【ES6】const,let,var.md",
     "1_awesome/awesome-javascript/【面向面试】/【S】Promise.all和Promise.allSettled的区别.md",
@@ -169,11 +174,6 @@
     "1_awesome/awesome-javascript/【Javascript扫盲】20220329.md",
     "1_awesome/awesome-javascript/函数参数占位符.md",
     "1_awesome/awesome-javascript/proxy对象.md",
-    "1_awesome/awesome-javascript/【面向开发】/javascript实现继承.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向面试】/原型与原型链.md",
-    "1_awesome/awesome-javascript/【面向开发】/匿名函数的定义和调用.md",
-    "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景.md",
     "1_awesome/awesome-javascript/【面向学习】",
     "1_awesome/awesome-javascript/【面向开发】",
     "1_awesome/awesome-javascript/【面向面试】",
