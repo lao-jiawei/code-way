@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
+                "file": "1_awesome/awesome-react/【SCN】useState源码解读.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
+                "file": "1_awesome/awesome-react/【SCN】useState源码解读.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
+                "file": "1_awesome/awesome-react/【SCN】useState源码解读.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md"
+                "file": "1_awesome/awesome-react/【SCN】useState源码解读.md"
               }
             }
           }
@@ -148,6 +148,7 @@
   },
   "active": "bbd3bc55d58add9b",
   "lastOpenFiles": [
+    "1_awesome/awesome-react/【SCN】useState源码解读~.md",
     "1_awesome/awesome-algorithm/《大话数据结构》.md",
     "1_awesome/awesome-react/【SCN】useState源码解读.md",
     "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
@@ -173,7 +174,6 @@
     "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】JavaScript高级教程(javascript实战进阶)-学习笔记.md",
     "1_awesome/awesome-javascript/【Javascript扫盲】20220329.md",
     "1_awesome/awesome-javascript/函数参数占位符.md",
-    "1_awesome/awesome-javascript/proxy对象.md",
     "1_awesome/awesome-javascript/【面向学习】",
     "1_awesome/awesome-javascript/【面向开发】",
     "1_awesome/awesome-javascript/【面向面试】",
