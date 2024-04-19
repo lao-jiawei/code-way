@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md"
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md"
               }
             }
           }
@@ -148,33 +148,34 @@
   },
   "active": "2b4ed51415747cbe",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/【N】javascript事件循环.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】javascript事件循环~.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】闭包~.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】执行上下文.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】执行上下文~.md",
-    "1_awesome/awesome-git/【S】github使用技巧.md",
+    "1_awesome/awesome-javascript/【面向面试】/【面试】【ES6】const,let,var.md",
+    "1_awesome/awesome-javascript/【面向面试】/【I】ES演变新特性.md",
     "1_awesome/awesome-javascript/【面向面试】/【S】Promise.all和Promise.allSettled的区别.md",
+    "1_awesome/awesome-javascript/【面向面试】/原型与原型链.md",
+    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】Web前端ES6教程，涵盖ES6-ES11.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【jQuery】【菜鸟编程】学习笔记.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】javascript事件循环.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【Javascript扫盲】20220329.md",
-    "1_awesome/awesome-npm/yarn/【S】使用技巧.md",
-    "1_awesome/awesome-react/【SCN】useState源码解读.md",
+    "1_awesome/awesome-javascript/proxy对象.md",
+    "1_awesome/awesome-javascript/函数参数占位符.md",
+    "1_awesome/awesome-javascript/【面向开发】/对象Object的创建和定义属性的方法.md",
+    "1_awesome/awesome-javascript/【面向开发】/【S】JS阻止事件冒泡方法.md",
+    "1_awesome/awesome-javascript/【面向开发】/对象Object的常见操作.md",
+    "1_awesome/awesome-javascript/【面向开发】/函数的声明和调用.md",
+    "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景.md",
+    "1_awesome/awesome-javascript/【面向开发】/匿名函数的定义和调用.md",
+    "1_awesome/awesome-javascript/【面向开发】/javascript实现继承.md",
+    "1_awesome/awesome-jest",
     "1_awesome/awesome-npm/yarn",
-    "1_awesome/awesome-react/【SCN】useState源码解读~.md",
-    "1_awesome/awesome-algorithm/《大话数据结构》.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
-    "1_awesome/awesome-react/【Ahook】【SCN】Ahook库源码.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【菜鸟编程】HTML-DOM.md",
-    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
-    "1_awesome/awesome-c/《C语言程序设计》.md",
-    "1_awesome/awesome-algorithm/《算法导论》.md",
-    "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
-    "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
-    "1_awesome/awesome-npm/【ms】【SCN】ms库源码解读.md",
-    "1_awesome/awesome-react/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
-    "1_awesome/awesome-react/【学习笔记】【React】【2022最新】4小时带你快速入门React全家桶.md",
     "1_awesome/awesome-javascript/【面向学习】",
     "1_awesome/awesome-javascript/【面向开发】",
     "1_awesome/awesome-javascript/【面向面试】",
@@ -182,7 +183,6 @@
     "未命名文件夹",
     "1_awesome/awesome-webpack",
     "1_awesome/awesome-frontend",
-    "1_awesome/未命名文件夹",
-    "1_awesome/awesome-mac"
+    "1_awesome/未命名文件夹"
   ]
 }
