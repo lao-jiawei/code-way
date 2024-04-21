@@ -135,3 +135,143 @@
 
 # 2.嵌套CSS 规则
 
+## Q：如何使用选择器嵌套？
+
+* A：
+
+  ````scss
+  #content {
+    article {
+      h1 { color: #333 }
+      p { margin-bottom: 1.4em }
+    }
+    aside { background-color: #EEE }
+  }
+  
+  /* 编译后 */
+  #content article h1 { color: #333 }
+  #content article p { margin-bottom: 1.4em }
+  #content aside { background-color: #EEE }
+  ````
+
+  > PS：注意：大多数情况下这种简单的嵌套都没问题，但是有些场景下不行（如：想要在嵌套的选择器 里边立刻应用一个类似于`：hover`的伪类）
+
+## Q：如何在伪类使用嵌套CSS规则？
+
+* A：通过&链接解决
+
+  ````scss
+  article a {
+    color: blue;
+    &:hover { color: red }
+  }
+  
+  /* 编译后 */
+  article a { color: blue }
+  article a:hover { color: red }
+  ````
+
+## Q：如何在父选择器之前添加选择器？
+
+* A：
+
+  ````scss
+  //示例：当用户在使用IE浏览器时，通过JavaScript在<body>标签上添加一个ie的类名。
+  #content aside {
+    color: red;
+    body.ie & { color: green }
+  }
+  
+  /*编译后*/
+  #content aside {color: red};
+  body.ie #content aside { color: green }
+  ````
+
+## Q：如何使用群组选择器的嵌套？
+
+* A：
+
+  ````scss
+  .container {
+    h1, h2, h3 {margin-bottom: .8em}
+  }
+  
+  /*编译后*/
+  .container h1, .container h2, .container h3 { margin-bottom: .8em }
+  
+  //对于内嵌在群组选择器内的嵌 套规则，处理方式也一样
+  nav, aside {
+    a {color: blue}
+  }
+  /*编译后*/
+  nav a, aside a {color: blue}
+  ````
+
+  >PS：注意
+  >
+  >* 虽然`sass`让你的样式表看上去很小，但实际生成的`css`却可能非常大，这会降低网站的速度。
+
+## Q：如何选择特定选择器下的子选择器元素？
+
+* A：使用`>`
+
+  ````scss
+  //选择器会选择article下的所有命中section选择器的元素
+  article section { margin: 5px }
+  //选择器只会选择article下紧跟着的子元素中命中section选择器的元素。
+  article > section { border: 1px solid #ccc }
+  ````
+
+## Q：如何选择同层相邻组合选择器？
+
+* A：使用`+`
+
+  ````scss
+  //示例：选择header元素后紧跟的p元素
+  header + p { font-size: 1.1em }
+  ````
+
+## Q：如何选择同层选择器？
+
+* A：使用`~`
+
+  ````scss
+  //示例：选择所有跟在article后的同层article元素，不管它们之间隔了多少其他元素
+  article ~ article { border-top: 1px dashed #ccc }
+  ````
+
+## Q：如何将属性嵌套？
+
+* A：
+
+  ```scss
+  nav {
+    border: {
+    style: solid;
+    width: 1px;
+    color: #ccc;
+    }
+  }
+  /*编译后*/
+  nav {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+  }
+  
+  //示例：指明例外规则
+  nav {
+    border: 1px solid #ccc {
+    left: 0px;
+    right: 0px;
+    }
+  }
+  /*编译后*/
+  nav {
+    border: 1px solid #ccc;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  ```
+
+# 3.导入SASS文件

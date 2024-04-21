@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-css/sass/【N】sass官方文档学习.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-jest/【N】初次使用.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-css/sass/【N】sass官方文档学习.md",
+                "file": "1_awesome/awesome-jest/【N】初次使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-css/sass/【N】sass官方文档学习.md",
+                "file": "1_awesome/awesome-jest/【N】初次使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-css/sass/【N】sass官方文档学习.md"
+                "file": "1_awesome/awesome-jest/【N】初次使用.md"
               }
             }
           }
@@ -148,9 +148,16 @@
   },
   "active": "2b0ab892d9ed66ee",
   "lastOpenFiles": [
+    "1_awesome/awesome-npm/【ms】【SCN】ms库源码解读.md",
+    "1_awesome/awesome-jest/【N】初次使用.md",
+    "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
+    "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
+    "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
+    "1_awesome/awesome-npm/【学习笔记】【Ajax】【尚硅谷】3小时Ajax入门到精通.md",
+    "1_awesome/awesome-npm/yarn/【S】使用技巧.md",
+    "1_awesome/awesome-css/sass/【N】sass官方文档学习.md",
     "1_awesome/awesome-css/sass/【N】sass官方文档学习~.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】函数作用域、块级作用域和词法作用域.md",
-    "1_awesome/awesome-css/sass/【N】sass官方文档学习.md",
     "1_awesome/awesome-css/sass",
     "1_awesome/awesome-css",
     "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
@@ -169,13 +176,6 @@
     "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】闭包~.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】执行上下文.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】执行上下文~.md",
-    "1_awesome/awesome-javascript/【面向面试】/【面试】【ES6】const,let,var.md",
-    "1_awesome/awesome-javascript/【面向面试】/【I】ES演变新特性.md",
-    "1_awesome/awesome-javascript/【面向面试】/【S】Promise.all和Promise.allSettled的区别.md",
-    "1_awesome/awesome-javascript/【面向面试】/原型与原型链.md",
-    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】Web前端ES6教程，涵盖ES6-ES11.md",
     "1_awesome/awesome-jest",
     "1_awesome/awesome-npm/yarn",
     "1_awesome/awesome-javascript/【面向学习】",
