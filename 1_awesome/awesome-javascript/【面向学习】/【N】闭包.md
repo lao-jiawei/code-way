@@ -57,6 +57,9 @@
     console.log(Counter.value()); /* logs 2 */
     Counter.decrement();
     console.log(Counter.value()); /* logs 1 */
+    ````
+    
+  * 让变量的值始终保持在内存中。
 ## Q：什么时候被创建？
 
 * A：随着函数的创建而被同时创建。
