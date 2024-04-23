@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md"
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md"
               }
             }
           }
@@ -148,8 +148,20 @@
   },
   "active": "a9f4491152b64e94",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/【N】闭包~.md",
+    "1_awesome/awesome-algorithm/《算法导论》.md",
+    "1_awesome/awesome-algorithm/《大话数据结构》.md",
+    "1_awesome/awesome-miniApp/【S】Taro微信小程序开发技巧.md",
+    "1_awesome/awesome-miniApp/【S】wepp微信小程序开发技巧.md",
     "1_awesome/awesome-jest/【N】初次使用.md",
+    "1_awesome/awesome-miniApp/【S】抖音小程序开发技巧.md",
+    "1_awesome/awesome-terminal/【S】tree使用.md",
+    "1_awesome/awesome-html&css/css/【笔记】【CSS】响应式设计.md",
+    "1_awesome/awesome-html&css/html",
+    "1_awesome/awesome-html&css/css",
+    "README.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
+    "1_awesome/awesome-miniApp",
+    "1_awesome/awesome-javascript/【面向学习】/【N】闭包~.md",
     "1_awesome/awesome-babel",
     "1_awesome/awesome-jest/【N】初次使用~.md",
     "1_awesome/awesome-npm/【ms】【SCN】ms库源码解读.md",
@@ -158,31 +170,19 @@
     "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
     "1_awesome/awesome-npm/【学习笔记】【Ajax】【尚硅谷】3小时Ajax入门到精通.md",
     "1_awesome/awesome-npm/yarn/【S】使用技巧.md",
-    "1_awesome/awesome-css/sass/【N】sass官方文档学习.md",
+    "1_awesome/awesome-html&css/sass/【N】sass官方文档学习.md",
     "1_awesome/awesome-css/sass/【N】sass官方文档学习~.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】函数作用域、块级作用域和词法作用域.md",
-    "1_awesome/awesome-css/sass",
+    "1_awesome/awesome-html&css/sass",
     "1_awesome/awesome-css",
-    "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
     "1_awesome/awesome-javascript/【Javascript扫盲】20220329.md",
     "1_awesome/awesome-javascript/【面向开发】/遍历数组array方法.md",
     "1_awesome/awesome-javascript/【面向开发】/【S】计算进度问题.md",
     "1_awesome/awesome-javascript/【面向开发】/【S】会改变源数据方法.md",
     "1_awesome/awesome-javascript/【面向开发】/【S】JS阻止事件冒泡方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/创建数组array的方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/对象Object的常见操作.md",
-    "1_awesome/awesome-javascript/【面向开发】/对象Object的创建和定义属性的方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/函数的声明和调用.md",
-    "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景.md",
-    "1_awesome/awesome-javascript/【面向开发】/匿名函数的定义和调用.md",
-    "1_awesome/awesome-javascript/【面向开发】/javascript实现继承.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
     "1_awesome/awesome-jest",
     "1_awesome/awesome-npm/yarn",
     "1_awesome/awesome-javascript/【面向学习】",
-    "1_awesome/awesome-javascript/【面向开发】",
-    "1_awesome/awesome-javascript/【面向面试】",
-    "1_awesome/awesome-vscode",
-    "未命名文件夹"
+    "1_awesome/awesome-javascript/【面向开发】"
   ]
 }
