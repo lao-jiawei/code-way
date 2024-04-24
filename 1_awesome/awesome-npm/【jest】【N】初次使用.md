@@ -43,7 +43,20 @@
 
 ##  Q：如何在jest适配es6
 
-* A：引入bebal
+* A：
+
+  1. 引入bebal
+
+     ````bash
+     yarn add @babel/core @babel/preset-env
+     ````
+
+  2. 在项目同级文件中添加`.babelrc`文件
+
+     ````javascript
+     ````
+
+     
 
 # 配置相关
 
