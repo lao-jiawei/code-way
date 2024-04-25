@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-npm/【jest】【N】初次使用.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-npm/【jest】【N】初次使用.md",
+                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-npm/【jest】【N】初次使用.md",
+                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-npm/【jest】【N】初次使用.md"
+                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "a9f4491152b64e94",
   "lastOpenFiles": [
+    "1_awesome/awesome-vscode/【快捷键】.md",
+    "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
+    "1_awesome/awesome-regExp/未命名",
+    "1_awesome/awesome-regExp",
+    "1_awesome/awesome-npm/【jest】【N】初次使用.md",
     "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
     "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
-    "1_awesome/awesome-npm/【jest】【N】初次使用.md",
     "1_awesome/awesome-miniApp/【S】Taro微信小程序开发技巧.md",
     "1_awesome/awesome-miniApp/【S】Taro开发微信小程序踩坑.md",
     "1_awesome/awesome-miniApp/【S】抖音小程序开发技巧.md",
@@ -178,11 +182,7 @@
     "1_awesome/awesome-javascript/【Javascript扫盲】20220329.md",
     "1_awesome/awesome-javascript/【面向开发】/遍历数组array方法.md",
     "1_awesome/awesome-javascript/【面向开发】/【S】计算进度问题.md",
-    "1_awesome/awesome-javascript/【面向开发】/【S】会改变源数据方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/【S】JS阻止事件冒泡方法.md",
     "1_awesome/awesome-jest",
-    "1_awesome/awesome-npm/yarn",
-    "1_awesome/awesome-javascript/【面向学习】",
-    "1_awesome/awesome-javascript/【面向开发】"
+    "1_awesome/awesome-npm/yarn"
   ]
 }
