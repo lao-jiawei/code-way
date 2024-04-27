@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "306a1e4aebe6127d",
+        "id": "acd578479a9fbe84",
         "type": "tabs",
         "children": [
           {
-            "id": "a9f4491152b64e94",
+            "id": "185a8e0e942dc530",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
-                "mode": "source",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md"
+                "file": "1_awesome/awesome-algorithm/《大话数据结构》.md"
               }
             }
           }
@@ -146,10 +146,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a9f4491152b64e94",
+  "active": "185a8e0e942dc530",
   "lastOpenFiles": [
-    "1_awesome/awesome-vscode/【快捷键】.md",
+    "1_awesome/awesome-html&css/css/【S】Css使用技巧.md",
+    "1_awesome/awesome-html&css/css/【CSS】grid布局-Grid Garden练习笔记.md",
     "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
+    "1_awesome/awesome-vscode/【快捷键】.md",
     "1_awesome/awesome-regExp/未命名",
     "1_awesome/awesome-regExp",
     "1_awesome/awesome-npm/【jest】【N】初次使用.md",
@@ -180,8 +182,6 @@
     "1_awesome/awesome-html&css/sass",
     "1_awesome/awesome-css",
     "1_awesome/awesome-javascript/【Javascript扫盲】20220329.md",
-    "1_awesome/awesome-javascript/【面向开发】/遍历数组array方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/【S】计算进度问题.md",
     "1_awesome/awesome-jest",
     "1_awesome/awesome-npm/yarn"
   ]
