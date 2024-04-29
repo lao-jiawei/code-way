@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d9c2e1cb9da4f445",
+        "id": "83e72365ad305d04",
         "type": "tabs",
         "children": [
           {
-            "id": "d4a2865f61335247",
+            "id": "3298f1ff16d55cab",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -138,9 +138,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d4a2865f61335247",
+  "active": "3298f1ff16d55cab",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/【N】this.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】Promise.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】this, call, apply 和 bind.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】this, call, apply 和 bind~.md",
     "1_awesome/awesome-vscode/【setting.json】.md",
     "1_awesome/awesome-vscode/【快捷键】.md",
     "1_awesome/awesome-git/【S】github使用技巧.md",
@@ -163,15 +166,12 @@
     "1_awesome/awesome-html&css/html",
     "1_awesome/awesome-html&css/css",
     "README.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
     "1_awesome/awesome-miniApp",
     "1_awesome/awesome-javascript/【面向学习】/【N】闭包~.md",
     "1_awesome/awesome-babel",
     "1_awesome/awesome-jest/【N】初次使用~.md",
     "1_awesome/awesome-npm/【ms】【SCN】ms库源码解读.md",
     "1_awesome/awesome-npm/【Ahook】【SCN】Ahook库源码.md",
-    "1_awesome/awesome-npm/【学习笔记】【Ajax】【尚硅谷】3小时Ajax入门到精通.md",
-    "1_awesome/awesome-npm/yarn/【S】使用技巧.md",
     "1_awesome/awesome-html&css/sass",
     "1_awesome/awesome-css",
     "1_awesome/awesome-jest",
