@@ -257,31 +257,6 @@
   }
   ````
 
-# 构造函数
-
-## Q：是什么？
-
-## Q：new使用时发生了什么？
-
-* A：相当于使用一个立即函数。每当用 `new` 调用函数时，JavaScript 解释器都会在底层创建一个全新的对象并把这个对象当做 `this`。
-
-  ````javascript
-  function person(name) {
-    this.name = name;
-  }
-  var foo = new person("deen");
-  //通过new创建了一个对象
-  //new是一种语法糖，new person等价于
-  var bar = (function(name) {
-    var _newObj = {
-      constructor : person,
-      __proto__ : person.prototype,
-    };
-    _newObj.constructor(name); // _newObj.constructor.call(_newObj, name)
-    return _newObj;
-  })();
-  ````
-
 
 # bind
 
