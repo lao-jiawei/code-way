@@ -10,6 +10,7 @@
 * A：
   * 函数体内部使用了`this`关键字，代表了所要生成的对象实例。
   * 生成对象的时候，必须使用`new`命令。
+  * 构造函数名一般为大写字母开头
 
 ## Q：构造函数如何实现继承？
 
@@ -52,7 +53,76 @@
       alert(cat1.species); // 动物
       ````
 
+      > 注意：
+      >
+      > * 如果替换了prototype对象，必需为新的prototype对象加上constructor属性，并将这个属性指回原来的构造函数。
+      >
+      >   ````javascript
+      >   o.prototype = {};
+      >   o.prototype.constructor = o;
+      >   ````
+    
+  * 方法三：直接继承prototype
+  
+    1. 先将子类`prototype`指向父类`prototype`
+    2. 再改变子类构造函数
+    3. 最后创建子类实例
+  
+    ````javascript
+    function Animal(){ }
+    
+    Animal.prototype.species = "动物";
+    
+    Cat.prototype = Animal.prototype;
+    Cat.prototype.constructor = Cat;
+    var cat1 = new Cat("大毛","黄色");
+    
+    alert(cat1.species); // 动物
+    ````
+  
+    * 优点：效率比较高（不用执行和建立父类的实例），比较省内存
+    * 缺点：子类`prototype`和父类`prototype`都指向同一个对象（即：子类可以对父类的`prototype`进行修改）
+  
+  * 方法四： 利用空对象作为中介
+  
+    ````javascript
+    function extend(Child, Parent) {
+      //F是空对象，所以几乎不占内存。
+      var F = function(){};
+      F.prototype = Parent.prototype;
+      Child.prototype = new F();
+      Child.prototype.constructor = Child;
       
+      //意思是为子对象设一个uber属性，这个属性直接指向父对象的prototype属性。
+      //等于在子对象上打开一条通道，可以直接调用父对象的方法。
+      //为了实现继承的完备性，纯属备用性质。
+      Child.uber = Parent.prototype;
+    }
+    
+    extend(Cat,Animal);
+    var cat1 = new Cat("大毛","黄色");
+    alert(cat1.species); // 动物
+    ````
+  
+  * 方法五：拷贝继承
+  
+    * 把父对象的所有属性和方法，拷贝进子对象
+  
+    ````javascript
+    //将父对象的prototype对象中的属性，一一拷贝给Child对象的prototype对象。　
+    function extend2(Child, Parent) {
+      var p = Parent.prototype;
+      var c = Child.prototype;
+      for (var i in p) {
+        c[i] = p[i];
+      }
+      c.uber = p;
+    }
+    
+    extend2(Cat, Animal);
+    var cat1 = new Cat("大毛","黄色");
+    alert(cat1.species); // 动物
+    ````
 
 # new命令
 
@@ -60,6 +130,10 @@
 
 * A：执行构造函数，返回一个实例对象。相当于使用一个立即函数。每当用 `new` 调用函数时，JavaScript 解释器都会在底层创建一个全新的对象并把这个对象当做 `this`。
 
+  1. 首先创建一个空对象，然后赋值给this。
+  2. 执行函数，通常修改this对象，增加一些新的属性。
+  3. `this`被返回。
+  
   ````javascript
   function person(name) {
     this.name = name;
@@ -154,3 +228,9 @@
 ## Q：有什么特征？
 
 * A：可以复用，通过继承机制还可以定制。
+
+# 实例
+
+## Q：是什么？
+
+* A：通过构造函数创建出来的对象。
