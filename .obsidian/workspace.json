@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "15918786b69729f6",
+        "id": "347d2b266cb73e61",
         "type": "tabs",
         "children": [
           {
-            "id": "29f539403577c9fc",
+            "id": "86a499a3ee053d14",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原型继承与原型链.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原型继承与原型链.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原型继承与原型链.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】原型继承与原型链.md"
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md"
               }
             }
           }
@@ -146,17 +146,19 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "29f539403577c9fc",
+  "active": "86a499a3ee053d14",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】原型继承与原型链.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】javascript事件循环.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】原型继承与原型链.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】设计模式.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】Promise.md",
+    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】Web前端ES6教程，涵盖ES6-ES11.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign~.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】this, call, apply 和 bind.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】this, call, apply 和 bind~.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】Promise.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】javascript事件循环.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】Promise~.md",
@@ -174,8 +176,6 @@
     "1_awesome/awesome-npm/【lodash】【SCN】loadash库源码.md",
     "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
     "1_awesome/awesome-miniApp/【S】Taro微信小程序开发技巧.md",
-    "1_awesome/awesome-miniApp/【S】Taro开发微信小程序踩坑.md",
-    "1_awesome/awesome-miniApp/【S】抖音小程序开发技巧.md",
     "1_awesome/awesome-html&css/html",
     "1_awesome/awesome-html&css/css",
     "1_awesome/awesome-miniApp",

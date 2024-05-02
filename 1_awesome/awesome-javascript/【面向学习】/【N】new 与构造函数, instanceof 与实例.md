@@ -229,8 +229,45 @@
 
 * A：可以复用，通过继承机制还可以定制。
 
+## Q：如何访问对象中的属性？
+
+* A：
+
+  ````javascript
+  //方法一
+  const value=obj.key;
+  //方法二
+  const value=obj['key'];
+  ````
+
+## Q：如何判断一个对象是否拥有某一个属性/方法？
+
+* A：通过in来判断，无论是该属性/方法存在于实例对象还是原型对象。
+
+  ````javascript
+  function Person(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  
+  Person.prototype.getName = function() {
+    return this.name;
+  }
+  
+  var p1 = new Person('tim', 10);
+  console.log('name' in p1); // true
+  ````
+
+  
+
 # 实例
 
 ## Q：是什么？
 
 * A：通过构造函数创建出来的对象。
+
+# instanceof
+
+## Q：能干啥？
+
+* A：可以判断实例对象的__proto__属性是否与构造函数的prototype属性指向同一地址，是的话返回true，否则fasle。
