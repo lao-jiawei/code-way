@@ -61,7 +61,11 @@
   ````
 
   * `target`：需要应用源对象属性的目标对象，修改后将作为返回值。
+  
+    > PS：`undefined`和`null`不可以作为target，但是作为`sources`却不会报错
+  
   * `sources`：一个或多个包含要应用的属性的源对象。
+  
   * 返回值：`target`对象
 
 ## Q：属于那种拷贝？
@@ -89,3 +93,17 @@
 
   * 拷贝Symbol类型属性
 
+## Q：哪些元素会被拷贝？
+
+* A：只有字符串的包装对象，会产生可枚举的实义属性，那些属性则会被拷贝。
+
+  * `Object.assign`拷贝的属性是有限制的，只拷贝源对象的自身属性（不拷贝继承属性），也不拷贝不可枚举的属性（`enumerable: false`）
+
+  > 注意：同名二级对象拷贝会被整个替换掉
+  >
+  > ````javascript
+  > const target = { a: { b: 'c', d: 'e' } }
+  > const source = { a: { b: 'hello' } }
+  > Object.assign(target, source)
+  > // { a: { b: 'hello' } }
+  > ````
