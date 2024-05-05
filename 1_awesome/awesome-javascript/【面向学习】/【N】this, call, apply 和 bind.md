@@ -247,6 +247,7 @@
       //处理当call传入的对象是null的时候，或者其他一些类型的时候
       context = Object.create(null)
     }
+    //用Symbol原因是key可以不被随意改变
     let fn = Symbol()
     //通过this获取函数
     context[fn] = this
@@ -286,3 +287,25 @@
 ## Q：为什么使用`new`运算符构造绑定函数，该this被忽略？
 
 * A：new的作用: 将`this`的值设置为新创建的空对象，而bind将new 中的this（即空对象）设置为**传递给它的第一个参数**也就是`thisArgs`。
+
+## Q：使用场景？
+
+* A：
+
+  * 保存函数参数
+
+    【示例】处理异步输出
+
+    ````javascript
+    for (var i = 1; i <= 5; i++) {
+        // 缓存参数
+        setTimeout(function (i) {
+            console.log('bind', i) // 依次输出：1 2 3 4 5
+        }.bind(null, i), i * 1000);
+    }
+    ````
+
+  * 回调函数this丢失问题
+
+    
+

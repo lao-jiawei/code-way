@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】== vs ===, typeof vs instanceof.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】== vs ===, typeof vs instanceof.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】== vs ===, typeof vs instanceof.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign.md"
+                "file": "1_awesome/awesome-javascript/【面向学习】/【N】== vs ===, typeof vs instanceof.md"
               }
             }
           }
@@ -148,11 +148,16 @@
   },
   "active": "86a499a3ee053d14",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】map, reduce, filter 等高阶函数.md",
+    "1_awesome/awesome-javascript/函数参数占位符.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】== vs ===, typeof vs instanceof.md",
+    "1_awesome/awesome-javascript/proxy对象.md",
+    "1_awesome/awesome-javascript/【面向面试】/【面试】【ES6】const,let,var.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】this, call, apply 和 bind.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】Promise.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】new 与构造函数, instanceof 与实例.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】this, call, apply 和 bind~.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】map, reduce, filter 等高阶函数.md",
+    "1_awesome/awesome-javascript/【面向学习】/【N】Promise.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】执行上下文.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】原型继承与原型链.md",
@@ -162,7 +167,6 @@
     "1_awesome/awesome-javascript/【面向学习】/【N】原始类型.md",
     "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】Web前端ES6教程，涵盖ES6-ES11.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】Object.create 和 Object.assign~.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】this, call, apply 和 bind~.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】闭包.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】调用堆栈.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】Promise~.md",
@@ -170,10 +174,6 @@
     "1_awesome/awesome-vscode/【快捷键】.md",
     "1_awesome/awesome-git/【S】github使用技巧.md",
     "1_awesome/awesome-git/【S】github使用技巧~.md",
-    "1_awesome/awesome-algorithm/《大话数据结构》.md",
-    "1_awesome/awesome-html&css/css/【S】Css使用技巧.md",
-    "1_awesome/awesome-html&css/css/【CSS】grid布局-Grid Garden练习笔记.md",
-    "1_awesome/awesome-regExp/【N】【菜鸟教程】正则表达式.md",
     "1_awesome/awesome-regExp/未命名",
     "1_awesome/awesome-regExp",
     "1_awesome/awesome-html&css/html",
