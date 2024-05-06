@@ -67,3 +67,30 @@
 ## Q：闭包的缺点是什么？
 
 * A：在处理速度和内存消耗方面对脚本性能具有负面影响
+
+## Q：如何避免闭包？
+
+* A：
+
+  * 将异步获取值保留到新增的闭包中
+
+    ````javascript
+    //存在闭包
+    for(var i = 0;i < 10;i++){
+       setTimeout(()=>{console.log(i),1000})
+    }
+    
+    //优化
+    function init3() {     
+      var pAry = document.getElementsByTagName("p");  
+      for( var i=0; i<pAry.length; i++ ) { 
+        //嵌套多一层闭包
+        (function(arg){         
+          pAry[i].onclick = function() {         
+            alert(arg);     
+          };     
+        })(i);//调用时参数     
+      }     
+    ````
+
+  * 将变量值保留到作用域之外
