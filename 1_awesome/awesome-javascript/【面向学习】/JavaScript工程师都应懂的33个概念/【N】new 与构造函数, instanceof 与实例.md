@@ -124,6 +124,21 @@
     alert(cat1.species); // 动物
     ````
 
+## Q：如何给构造函数添加属性？
+
+* A：将属性添加至构造函数原型上。
+
+  ````javascript
+  //✅
+  Person.prototype.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  //❌
+  Person.getFullName = function () {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  ````
+
 # new命令
 
 ## Q：new使用时发生了什么？
@@ -226,7 +241,24 @@
 
 ## Q：有什么特征？
 
-* A：可以复用，通过继承机制还可以定制。
+* A：
+
+  * 可以复用，通过继承机制还可以定制。
+
+  * 如果你有两个名称相同的键，则键会被替换掉。它仍然位于第一个键出现的位置，但是值是最后出现那个键的值。
+
+    ````javascript
+    const obj = { 
+      a: 'one', 
+      b: 'two', 
+      a: 'three' 
+    }
+    console.log(obj)
+    //{a:'three',b:'two'}
+    ````
+
+    
+
 
 ## Q：如何访问对象中的属性？
 
@@ -237,6 +269,16 @@
   const value=obj.key;
   //方法二
   const value=obj['key'];
+  ````
+
+## Q：所有对象的键所属类型是啥？
+
+* 所有对象的键（不包括 Symbol）在底层都是字符串。
+
+  ````javascript
+  const obj = { 1: 'a', 2: 'b', 3: 'c' }
+  obj.hasOwnProperty('1')//true
+  obj.hasOwnProperty(1)//false
   ````
 
 ## Q：如何判断一个对象是否拥有某一个属性/方法？
@@ -270,3 +312,29 @@
 ## Q：能干啥？
 
 * A：可以判断实例对象的__proto__属性是否与构造函数的prototype属性指向同一地址，是的话返回true，否则fasle。
+
+# 静态方法
+
+## Q：特点是啥？
+
+* 只能被创建它们的构造器使用，并且不能传递给实例。（即：不能被实例使用）
+
+  * 若被使用则抛出 `TypeError` 错误。
+
+  ````javascript
+  class Chameleon {
+  static colorChange(newColor) {
+    this.newColor = newColor
+    return this.newColor
+  }
+  
+  constructor({ newColor = 'green' } = {}) {
+    this.newColor = newColor
+  }
+  }
+  
+  const freddie = new Chameleon({ newColor: 'purple' })
+  freddie.colorChange('orange')
+  ````
+
+  

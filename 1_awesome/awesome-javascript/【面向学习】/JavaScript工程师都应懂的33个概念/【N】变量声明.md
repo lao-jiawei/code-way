@@ -47,4 +47,30 @@
   name='iceman';
   `````
 
+## Q：`use strict`状态下，变量不声明会发生什么？
+
+* A：将抛出一个引用错误`ReferenceError`。
+
+  ````javascript
+  function getAge() {
+    'use strict'
+    age = 21
+    console.log(age)//ReferenceError
+  }
+  
+  getAge()
+  ````
+
+
+## Q：使用var多次声明同一个变量，谁会生效？
+
+* A：使用 `var` 关键字，你可以用相同的名称声明多个变量。然后变量将保存最新的值。
+
+  ````javascript
+  var num = 8
+  var num = 10
+  
+  console.log(num)//10
+  ````
+
   

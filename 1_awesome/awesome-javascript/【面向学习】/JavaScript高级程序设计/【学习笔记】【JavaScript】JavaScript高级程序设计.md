@@ -1,3 +1,21 @@
+# 第3章 语言基础
+
+## 操作符
+
+### 一元操作符
+
+#### Q：如何区分先增（减）还是后增（减）？
+
+* A：看符号位置，在前则先，在后则过后再处理
+
+  ````javascript
+  let number = 0			 // 输出		number
+  console.log(number++)//	 0				1
+  console.log(++number)//	 2				2
+  ````
+
+  
+
 # 第4章	变量、作业域和内存问题
 
 ## 1、基本类型和引用类型的值
@@ -100,26 +118,18 @@ alert(obj2.name);	//输出'lao'
 
 <br>
 
-# 第5章	引用类型
+# 第5章	基本引用类型
 
-<br>
+## `concat()`方法
 
-## 2、Array类型
+### Q：能干啥？
 
-### 2.3	栈方法
+* A：
+  * 基于当前数组中的所有项创建一个**新数组**
+  * 拼接数组
 
-<br>
 
-### 2.7	位置方法
-
-#### `concat()`方法
-
-> 能干啥？
-
-* 基于当前数组中的所有项创建一个**新数组**
-* 拼接数组
-
-> 怎么用？
+### Q：怎么用？
 
 【示例】
 
@@ -127,13 +137,25 @@ alert(obj2.name);	//输出'lao'
 var colors =
 ````
 
+## `splice()`方法
 
+## `eval()`方法
 
-<br>
+### Q：能干嘛？
 
-#### `splice()`方法
+* A：执行 ECMAScript(JavaScript)字符串。
 
-<br>
+### Q：怎么用？
+
+* A：
+
+  ````javascript
+  eval("console.log('hi')");
+  //上面这行代码的功能与下一行等价:
+  console.log("hi");
+  ````
+
+  * 参数：需要执行的 ECMAScript(JavaScript)字符串。
 
 # 第7章	函数表达式
 
@@ -245,3 +267,4 @@ var name = document.querySelectorAll("cssSelector")
 
 * 匹配到：**所有**匹配的元素
 * 匹配不到：NodeList是空的。
+

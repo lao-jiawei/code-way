@@ -12,6 +12,10 @@
     | Boolean  | false           |
     | Number   | -0、+0、NaN     |
     | String   | ''              |
+    
+  * 转成true的值
+  
+    * 构造函数
 
 ## Q：隐式转为number类型的例子有哪些？
 
@@ -33,5 +37,21 @@
     let a='5'+1 //51
     ````
 
-  * 
+  * Obj[obj]
+  
+    ````javascript
+    const a = {}
+    const b = { key: 'b' }
+    const c = { key: 'c' }
+    
+    //b被转换成"[object Object]"
+    a[b] = 123
+    //c也被转换成"[object Object]"
+    a[c] = 456
+    
+    //相当于a["[object Object]"]
+    console.log(a[b])//456
+    ````
+  
+    
 
