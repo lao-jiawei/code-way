@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】setTimeout, setInterval 和 requestAnimationFrame.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】setTimeout, setInterval 和 requestAnimationFrame.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】setTimeout, setInterval 和 requestAnimationFrame.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】setTimeout, setInterval 和 requestAnimationFrame.md"
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md"
               }
             }
           }
@@ -148,34 +148,34 @@
   },
   "active": "e15a875b42a7967d",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】隐式, 显式, 名义和鸭子类型.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】函数作用域、块级作用域和词法作用域.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】立即执行函数, 模块化, 命名空间.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】设计模式.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原始类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原型继承与原型链.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】执行上下文.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】map, reduce, filter 等高阶函数.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Object.create 和 Object.assign.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】setTimeout, setInterval 和 requestAnimationFrame.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】客户端存储.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】隐式, 显式, 名义和鸭子类型.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】this, call, apply 和 bind.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原型继承与原型链.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】执行上下文.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】map, reduce, filter 等高阶函数.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】new 与构造函数, instanceof 与实例.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Object.create 和 Object.assign.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Promise.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】调用堆栈.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】new 与构造函数, instanceof 与实例~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】变量声明.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【狂神说】JavaScript-学习笔记.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【菜鸟编程】HTML-DOM.md",
-    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】Web前端ES6教程，涵盖ES6-ES11.md",
-    "1_awesome/awesome-javascript/【面向学习】/【学习笔记】【JavaScript】【尚硅谷】JavaScript基础&实战丨JS入门到精通全套完整版.md",
     "1_awesome/awesome-react/【面向学习】",
     "1_awesome/awesome-react/【面向开发】",
     "1_awesome/awesome-regExp/未命名",
