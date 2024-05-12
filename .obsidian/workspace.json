@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fde815c883a9588d",
+        "id": "7dbc80c0776f1dba",
         "type": "tabs",
         "children": [
           {
-            "id": "e15a875b42a7967d",
+            "id": "9177935c2b484736",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md",
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md"
+                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md"
               }
             }
           }
@@ -146,13 +146,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e15a875b42a7967d",
+  "active": "9177935c2b484736",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
-    "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计~.md",
+    "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md",
+    "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板~.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】隐式, 显式, 名义和鸭子类型.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】函数作用域、块级作用域和词法作用域.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】立即执行函数, 模块化, 命名空间.md",
@@ -171,9 +174,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】this, call, apply 和 bind.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】new 与构造函数, instanceof 与实例.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Promise.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】调用堆栈.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】new 与构造函数, instanceof 与实例~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计",
     "1_awesome/awesome-react/【面向学习】",

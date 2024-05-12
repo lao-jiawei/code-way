@@ -13,7 +13,7 @@
   function* generatorFn() {}
   // 生成器函数表达式
   let generatorFn = function* () {}
-  // 作为对象字面量方法的生成器函数 
+  // 作为对象字面量方法的生成器函é数 
   let foo = {
     * generatorFn() {}
   }
@@ -34,3 +34,9 @@
 * A：
   * 遇到`yield`就停下，生成yield值并输出但是不返回（即：不return）。
   * 当再次执行next()方法时，会从之前停止的位置继续向下执行，至下一个`yield`停下。
+
+## Q：如何提前终止生成器？
+
+* A：return()和 throw()方法都可以用于强制生成器进入关闭状态。
+  * 方法一：return()
+  * 方法二：throw()
