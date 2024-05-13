@@ -299,7 +299,10 @@
   console.log('name' in p1); // true
   ````
 
-  
+
+## Q：当调用一个对象不存在的函数时，会抛出什么类型的错误？
+
+* A：TypeError
 
 # 实例
 

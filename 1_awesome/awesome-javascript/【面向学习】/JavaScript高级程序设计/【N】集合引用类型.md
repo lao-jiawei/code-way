@@ -81,6 +81,18 @@
 
 # Set
 
+## Q：Set构造函数创建出来的返回值是什么类型？
+
+* A：对象。
+
+  ````javascript
+  const set = new Set([1, 1, 2, 3, 4]);
+  
+  console.log(set);//{1,2,3,4}
+  ````
+
+  
+
 * 基本API
 
   | api       | 描述                   |
