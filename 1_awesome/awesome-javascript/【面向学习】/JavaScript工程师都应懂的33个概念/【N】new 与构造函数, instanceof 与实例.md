@@ -304,6 +304,31 @@
 
 * A：TypeError
 
+## Q：如何给对象添加一个新属性？
+
+* A：
+
+  * 方法一：`defineProperty`方法。
+
+    ````javascript
+    Object.defineProperty(targetObj, key, options);
+    ````
+
+    * `targetObj`：修改的目标对象（object）
+
+    * `key`：键名（string）
+
+    * `options`：
+
+      | 键名     | 描述   |
+      | -------- | ------ |
+      | value    | 键值   |
+      | writable | 可写性 |
+
+      
+
+  * 方法二：obj[key]
+
 # 实例
 
 ## Q：是什么？
