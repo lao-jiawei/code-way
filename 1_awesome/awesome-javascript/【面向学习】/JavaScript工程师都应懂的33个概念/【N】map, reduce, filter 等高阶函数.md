@@ -48,7 +48,7 @@ array = array.map((i) => ++i)
     * `result`：收集的结果
     * `element`：当前元素
     * `index`：索引
-  * `initObj`：初始值。
+  * `initObj`：初始值。(若指定初始值，默认首次用第一个元素)
 
 # filter
 

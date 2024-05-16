@@ -100,44 +100,7 @@ alert(obj2.name);	//输出'lao'
 
 <br>
 
-# 第5章	基本引用类型
 
-## `concat()`方法
-
-### Q：能干啥？
-
-* A：
-  * 基于当前数组中的所有项创建一个**新数组**
-  * 拼接数组
-
-
-### Q：怎么用？
-
-【示例】
-
-````javascript
-var colors =
-````
-
-## `splice()`方法
-
-## `eval()`方法
-
-### Q：能干嘛？
-
-* A：执行 ECMAScript(JavaScript)字符串。
-
-### Q：怎么用？
-
-* A：
-
-  ````javascript
-  eval("console.log('hi')");
-  //上面这行代码的功能与下一行等价:
-  console.log("hi");
-  ````
-
-  * 参数：需要执行的 ECMAScript(JavaScript)字符串。
 
 # 第7章	函数表达式
 

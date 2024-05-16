@@ -139,6 +139,27 @@
   }
   ````
 
+## Q：如何使用super实现继承
+
+* A：
+
+  ````javascript
+  class Dog {
+    constructor(name) {
+      this.name = name;
+    }
+  };
+  
+  class Labrador extends Dog {
+    constructor(name, size) {
+      super(name);
+      this.size = size;
+    }
+  }
+  ````
+
+  * super相当于调用父类的构造函数，所传的参数，在父类构造函数中可以接受到。
+
 # new命令
 
 ## Q：new使用时发生了什么？
@@ -320,13 +341,15 @@
 
     * `options`：
 
-      | 键名     | 描述   |
-      | -------- | ------ |
-      | value    | 键值   |
-      | writable | 可写性 |
-
+      | 键名         | 描述                    |
+      | ------------ | ----------------------- |
+      | value        | 键值                    |
+      | writable     | 可写性                  |
+      | enumerable   | 可枚举性（默认为false） |
+      | configurable |                         |
       
-
+      
+  
   * 方法二：obj[key]
 
 # 实例
