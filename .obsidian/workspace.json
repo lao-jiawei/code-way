@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
+                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
+                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
+                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md"
+                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md"
               }
             }
           }
@@ -134,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,8 +149,9 @@
   },
   "active": "d1fdb0c4cf422951",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
+    "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计.md",
@@ -174,7 +176,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】设计模式.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】立即执行函数, 模块化, 命名空间.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】函数作用域、块级作用域和词法作用域.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JSON.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计",
     "1_awesome/awesome-react/【面向学习】",
