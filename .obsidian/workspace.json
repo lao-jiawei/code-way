@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b36c705eeb039d16",
+        "id": "cf9a4b39a6d9c20a",
         "type": "tabs",
         "children": [
           {
-            "id": "d1fdb0c4cf422951",
+            "id": "7facbe038c0544ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+                "file": "1_awesome/awesome-nodejs/【N】学习笔记.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+                "file": "1_awesome/awesome-nodejs/【N】学习笔记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+                "file": "1_awesome/awesome-nodejs/【N】学习笔记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md"
+                "file": "1_awesome/awesome-nodejs/【N】学习笔记.md"
               }
             }
           }
@@ -147,10 +147,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "d1fdb0c4cf422951",
+  "active": "7facbe038c0544ce",
   "lastOpenFiles": [
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
+    "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
+    "1_awesome/awesome-nodejs/【N】学习笔记.md",
+    "1_awesome/awesome-npm/【npm】【S】使用技巧~.md",
     "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+    "1_awesome/awesome-pack/【N】webpack学习笔记.md",
+    "1_awesome/awesome-pack",
+    "1_awesome/awesome-cs/【N】操作系统.md",
+    "1_awesome/awesome-javascript/【面向开发】/【S】JS阻止事件冒泡方法.md",
+    "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md",
+    "1_awesome/awesome-miniApp/【S】Taro微信小程序开发技巧.md",
+    "1_awesome/awesome-miniApp/【S】抖音小程序开发技巧.md",
+    "1_awesome/awesome-miniApp/【S】Taro开发微信小程序踩坑.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
@@ -166,16 +177,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】this, call, apply 和 bind.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】setTimeout, setInterval 和 requestAnimationFrame.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Promise.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Object.create 和 Object.assign.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】new 与构造函数, instanceof 与实例.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】map, reduce, filter 等高阶函数.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】执行上下文.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原始类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】隐式, 显式, 名义和鸭子类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】设计模式.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】立即执行函数, 模块化, 命名空间.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】函数作用域、块级作用域和词法作用域.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计",
     "1_awesome/awesome-react/【面向学习】",
@@ -183,7 +184,6 @@
     "1_awesome/awesome-regExp/未命名",
     "1_awesome/awesome-regExp",
     "1_awesome/awesome-html&css/html",
-    "1_awesome/awesome-html&css/css",
-    "1_awesome/awesome-miniApp"
+    "1_awesome/awesome-html&css/css"
   ]
 }
