@@ -29,7 +29,7 @@
     | latest | 最新版本 |
     | canary |          |
 
-## Q：如何清除项目中的node_modules
+## Q：如何清除项目中的node_modules´
 
 * A：
 
@@ -43,3 +43,13 @@
   * npm：用来下载包
   * npx：会将node_modules中的`.bin`文件临时添加为环境变量
     * 就可以访问环境变量中的应用程序
+
+## Q：如何查看当前源地址？
+
+* A：
+
+  ````bash
+  npm get config registry
+  ````
+
+  
