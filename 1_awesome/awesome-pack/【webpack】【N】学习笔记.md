@@ -1,4 +1,4 @@
-# webpack介绍与基本使用
+# webpack5介绍与基本使用
 
 ## Q：webpack是什么？
 
@@ -138,3 +138,137 @@
   3. 重新打包
 
 ## Q：如何处理less资源？
+
+* A：
+
+  1. 下载包
+
+     ````bash
+     npm i less-loader less -D
+     ````
+
+  2. 设置配置文件
+
+     ````javascript
+     module.exports = {
+       ...,
+       module: {
+         rules: [	
+       			...,
+           {
+             test: /.less$/,
+             // loader: 'xxx', 只能使用一个loader
+             // use可以使用多个 loader
+             use: ["style-loader", "css-loader", "less-loader"],
+           },
+         ],
+       },
+       ...,
+       plugins: [],
+       mode: "development",
+     };
+     ````
+
+  3. 重新打包
+
+## Q：如何处理sass资源？
+
+* A：
+
+  1. 下载包
+
+     ```` bash
+     npm i sass-loader less -D
+     ````
+
+  2. 设置配置文件
+
+     ````javascript
+     module.exports = {
+       ...,
+       module: {
+         rules: [	
+       			...,
+           {
+             test: /\.s[ac]ss$/,
+             // loader: 'xxx', 只能使用一个loader
+             // use可以使用多个 loader
+             use: ["style-loader", "css-loader", "sass-loader"],
+           },
+         ],
+       },
+       ...,
+       plugins: [],
+       mode: "development",
+     };
+     ````
+
+  3. 重新打包
+
+## Q：如何处理stylus资源？
+
+* A：
+  1. 下载包
+  
+     ```` bash
+     npm i stylus-loader less -D
+     ````
+  
+  2. 设置配置文件
+  
+     ````javascript
+     module.exports = {
+       ...,
+       module: {
+         rules: [	
+       			...,
+           {
+             test: /.styl$/,
+             use: ["style-loader", "css-loader", "stylus-loader"],
+           },
+         ],
+       },
+       ...,
+       plugins: [],
+       mode: "development",
+     };
+     ````
+  
+  3. 重新打包
+
+## Q：如何处理图片资源？
+
+* A：
+
+  1. 直接使用，只需设置配置文件
+
+     ````javascript
+     module.exports = {
+       ...,
+       module: {
+         rules: [
+           // 图片配置
+           {
+             test: /.(png|jpe?g|gif|webp)$/,
+             type: "asset",
+           },
+         ],
+       },
+       plugins: [],
+       mode: "development",
+     };
+     ````
+
+  2. 删除dist中的文件
+
+  3. 重新打包
+
+## Q：如何指定打包文件路径？
+
+* A：
+
+## Q：如何设置图片打包配置？
+
+* A：
+
+  

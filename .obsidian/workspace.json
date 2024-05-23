@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "86130931af26a9b9",
+        "id": "32d028a1f500634c",
         "type": "tabs",
         "children": [
           {
-            "id": "802d18f4f99e908c",
+            "id": "9c33a61a05a9cf80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
                 "mode": "preview",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md"
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md"
               }
             }
           }
@@ -147,13 +147,15 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "802d18f4f99e908c",
+  "active": "9c33a61a05a9cf80",
   "lastOpenFiles": [
-    "1_awesome/awesome-npm/【pnpm】【N】学习笔记~.md",
-    "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
     "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
-    "1_awesome/awesome-pack/【Vite】【N】学习笔记.md",
+    "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
+    "1_awesome/awesome-npm/mockjs/【fnm】【S】包管理工具使用技巧.md",
+    "1_awesome/awesome-terminal/【S】brew使用.md",
     "1_awesome/awesome-pack/【webpack】【N】学习笔记.md",
+    "1_awesome/awesome-npm/【pnpm】【N】学习笔记~.md",
+    "1_awesome/awesome-pack/【Vite】【N】学习笔记.md",
     "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
     "1_awesome/awesome-nodejs/【N】学习笔记.md",
     "1_awesome/awesome-npm/【npm】【S】使用技巧~.md",
@@ -175,8 +177,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/未命名",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】模块.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】模块~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原型继承与原型链.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计",
     "1_awesome/awesome-react/【面向学习】",

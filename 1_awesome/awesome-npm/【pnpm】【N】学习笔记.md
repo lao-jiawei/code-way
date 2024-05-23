@@ -71,3 +71,16 @@
 
 * A：
   * 检查项目中`.npmrc`文件中`registry=`的值
+
+## Q：依赖安装过程终端显示内容是啥？
+
+* A：
+
+  ````bash
+  Progress: resolved 175, reused 175, downloaded 0, added 0
+  ````
+
+  * `resolved`：解析依赖树时发现的所有依赖项的数量
+  * `reused`：pnpm 从缓存中复用的依赖项的数量。
+  * `downloaded`：从远程仓库下载的依赖项的数量。
+  * `added`：将下载的依赖项添加到项目中的数量。
