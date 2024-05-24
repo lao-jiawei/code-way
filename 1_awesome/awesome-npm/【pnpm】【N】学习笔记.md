@@ -20,38 +20,42 @@
 
   1. 复制原项目文件做备份
 
-  2. 删除文件中`node_modules`文件
+  2. 检查package.json配置是否正确
+
+     * 用原包管理工具重新安装依赖，运行项目查看依赖配置是否有效。
+  
+  3. 删除文件中`node_modules`文件
 
      ````bash
      rm -rf node_modules
      ````
-
-  3. 使用原`xxx-lock.xxx`文件生成`pnpm-lock.yaml`文件
+  
+  4. 使用原`xxx-lock.xxx`文件生成`pnpm-lock.yaml`文件
 
      ````bash
      pnpm import
      ````
 
      > 该指令作用：[通过其他软件包管理器的 lockfile 文件生成 `pnpm-lock.yaml`](https://www.pnpm.cn/cli/import)
-
-  4. 检查是否有使用内部源，若有使用则切换源地址
+  
+  5. 检查是否有使用内部源，若有使用则切换源地址
 
      ````bash
      pnpm config set registry {源地址}
      ````
-
-  5. 安装依赖
+  
+  6. 安装依赖
 
      ````bash
      pnpm i
      ````
-
-  6. 处理报错
+  
+  7. 处理报错
 
      ````bash
      pnpm add {缺失包} -{mode}
      ````
-
+  
      > 注意：根据包对项目的影响决定添加包至不同的模式
      >
      > `mode`：

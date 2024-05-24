@@ -17,7 +17,11 @@
   console.log(numbers)
   ````
 
-  
+
+## Q：什么是array.push()
+
+* A：将数据项插入数组尾部。
+  * 返回值：插入后的数组长度。
 
 # Map
 
