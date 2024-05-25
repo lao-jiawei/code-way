@@ -267,8 +267,105 @@
 
 * A：
 
+  1. 修改配置文件
+
+     ````javascript
+     module.exports = {
+       entry: "./src/main.js",
+       output: {
+         path: path.resolve(__dirname, "dist"),
+         // 将 js 文件输出到 static/js 目录中
+         filename: "static/js/main.js", 
+       },
+       ...,
+     };
+     ````
+
+  2. 重新打包
+
 ## Q：如何设置图片打包配置？
 
 * A：
 
+  1. 修改配置文件
   
+     ````javascript
+     module.exports = {
+       ...,
+       module: {
+         rules: [
+     	  //	...
+           {
+             test: /.(png|jpe?g|gif|webp)$/,
+             type: "asset",
+             parser: {
+               dataUrlCondition: {
+                 maxSize: 10 * 1024, // 小于10kb的图片会被base64处理
+               },
+             },
+             generator: {
+               // 将图片文件输出到 static/imgs 目录中
+               // 将图片文件命名 [hash:8][ext][query]
+               // [hash:8]: hash值取8位
+               // [ext]: 使用之前的文件扩展名
+               // [query]: 添加之前的query参数
+               filename: "static/imgs/[hash:8][ext][query]",
+             },
+           },
+         ],
+       },
+       plugins: [],
+       mode: "development",
+     };
+     ````
+  
+  2. 重新打包
+
+## Q：如何自动清空上次打包资源？
+
+* A：设置`output.clean`
+
+  ````javascript
+  module.exports = {
+    entry: "./src/main.js",
+    output: {
+      path: path.resolve(__dirname, "dist"),
+      filename: "static/js/main.js",
+      clean: true, // 自动将上次打包目录资源清空
+    },
+    ...,
+  };
+  ````
+
+  * 原理：在打包前，将path整个目录内容清空，再进行打包。
+
+## Q：如何处理音频资源？
+
+* A：
+
+  1. 设置配置文件
+
+     ````javascript
+     module.exports = {
+       ...,
+       module: {
+         rules: [
+           // 添加此处配置
+           {
+             test: /.(ttf|woff2?|map4|map3|avi)$/,
+             type: "asset/resource",
+             generator: {
+               filename: "static/media/[hash:8][ext][query]",
+             },
+           },
+         ],
+       },
+       plugins: [],
+       mode: "development",
+     };
+     ````
+
+  2. 重新打包
+
+
+
