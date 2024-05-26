@@ -367,5 +367,263 @@
 
   2. 重新打包
 
+## Q：如何使用Eslint插件？
+
+* A：
+
+  1. 下载包
+
+     ````bash
+     npm i eslint-webpack-plugin eslint -D
+     ````
+
+  2. 定义Eslint配置文件，在`.src`同级目录下创建`.eslintrc.js`文件
+
+     ````javascript
+     //.eslintrc.js
+     module.exports = {
+       // 继承 Eslint 规则
+       extends: ["eslint:recommended"],
+       env: {
+         node: true, // 启用node中全局变量
+         browser: true, // 启用浏览器中全局变量
+       },
+       parserOptions: {
+         ecmaVersion: 6,
+         sourceType: "module",
+       },
+       rules: {
+         "no-var": 2, // 不能使用 var 定义变量
+       },
+     };
+     ````
+
+  3. 重新打包
+
+  > 注意：如何让eslint忽略指定目录下的文件？
+  >
+  > * A：在`.src`同级目录下创建`.eslintignore`文件，里面输入需要忽略的文件路径。
+
+## Q：如何使用babel？
+
+* A：
+
+  1. 在`src`目录同级中添加配置文件`babel.config.js`
+
+     ````javascript
+     module.exports = {
+       // 预设
+       presets: [],
+     };
+     ````
+
+     * `presets 预设`：一组 Babel 插件, 扩展 Babel 功能
+
+       * `@babel/preset-env`: 一个智能预设，允许您使用最新的 JavaScript。
+
+         `@babel/preset-react`：一个用来编译 React jsx 语法的预设
+
+         `@babel/preset-typescript`：一个用来编译 TypeScript 语法的预设。
+
+  2. 设置`webpack.config.js`配置
+
+     ````javascript
+     module.exports = {
+       entry: "./src/main.js",
+       output: {
+         path: path.resolve(__dirname, "dist"),
+         filename: "static/js/main.js", // 将 js 文件输出到 static/js 目录中
+         clean: true, // 自动将上次打包目录资源清空
+       },
+       module: {
+         rules: [
+           // 对js进行编译
+           {
+             test: /.js$/,
+             exclude: /node_modules/, // 排除node_modules代码不编译
+             loader: "babel-loader",
+           },
+         ],
+       },
+       plugins: [],
+       mode: "development",
+     };
+     ````
+
+# Plugins
+
+## Q：如何处理HTML资源？
+
+* A：
+
+  1. 下载插件
+
+     ````bash
+     npm i html-webpack-plugin -D
+     ````
+
+  2. 设置`webpack.config.js`
+
+     ````javascript
+     const path = require("path");
+     const ESLintWebpackPlugin = require("eslint-webpack-plugin");
+     const HtmlWebpackPlugin = require("html-webpack-plugin");
+     
+     module.exports = {
+       ...,
+       plugins: [
+         new ESLintWebpackPlugin({
+           // 指定检查文件的根目录
+           context: path.resolve(__dirname, "src"),
+         }),
+         new HtmlWebpackPlugin({
+           // 以 public/index.html 为模板创建文件
+           // 新的html文件有两个特点：1. 内容和源文件一致 2. 自动引入打包生成的js等资源
+           template: path.resolve(__dirname, "public/index.html"),
+         }),
+       ],
+       mode: "development",
+     };
+     ````
+
+  3. 重新打包
+
+# devServer
+
+## Q：如何开启服务器&自动化？
+
+* A：
+
+  1. 下载包
+
+     ````bash
+     npm i webpack-dev-server -D
+     ````
+
+  2. 配置`webpack.config.js`
+
+     ```javascript
+     module.exports = {
+     	...,
+       // 开发服务器
+       devServer: {
+           host: "localhost", // 启动服务器域名
+           port: "3000", // 启动服务器端口号
+           open: true, // 是否自动打开浏览器
+       },
+       mode: "development",
+     };
+     ```
+
+  3. 运行开发服务
+
+     ````bash
+     npx webpack serve
+     ````
+
+     * 当使用开发服务器时，所有代码都会在内存中编译打包，并不会输出到 dist 目录下。
+
+# 生产模式
+
+## Q：优化内容有哪些？
+
+* A：
+  * 优化代码运行性能
+  * 优化代码打包速度
+
+## Q：如何配置项兼容开发与生产？
+
+* A：
+
+  1. 设置项目文件目录
+
+     ````bash
+     ├── (项目根目录)
+         ├── config (Webpack配置文件目录)
+         │    ├── webpack.dev.js(开发模式配置文件)
+         │    └── webpack.prod.js(生产模式配置文件)
+         ├── node_modules (下载包存放目录)
+         ├── src (项目源码目录，除了html其他都在src里面)
+         │    └── 略
+         ├── public (项目html文件)
+         │    └── index.html
+         ├── .eslintrc.js(Eslint配置文件)
+         ├── babel.config.js(Babel配置文件)
+         └── package.json (包的依赖管理配置文件)
+     ````
+
+  2. 设置开发模式配置文件`webpack.dev.js`
+
+     ````javascript
+     module.exports = {
+       entry: "./src/main.js",
+       output: {
+         path: undefined, // 开发模式没有输出，不需要指定输出目录
+         filename: "static/js/main.js", // 将 js 文件输出到 static/js 目录中
+         // clean: true, // 开发模式没有输出，不需要清空输出结果
+       },
+       module: {
+         rules: [
+           ...,
+         ],
+         plugins: [
+           new ESLintWebpackPlugin({
+             // 指定检查文件的根目录
+             context: path.resolve(__dirname, "../src"),
+           }),
+           new HtmlWebpackPlugin({
+             // 以 public/index.html 为模板创建文件
+             // 新的html文件有两个特点：1. 内容和源文件一致 2. 自动引入打包生成的js等资源
+             template: path.resolve(__dirname, "../public/index.html"),
+           }),
+         ],
+     // 其他省略
+       devServer: {
+         host: "localhost", // 启动服务器域名
+         port: "3000", // 启动服务器端口号
+         open: true, // 是否自动打开浏览器
+       },
+       mode: "development",
+     };
+     ````
+
+  3. 设置生产模式配置文件`webpack.prod.js`
+
+     ````javascript
+     module.exports = {
+       entry: "./src/main.js",
+       output: {
+         path: path.resolve(__dirname, "../dist"), // 生产模式需要输出
+         filename: "static/js/main.js", // 将 js 文件输出到 static/js 目录中
+         clean: true,
+       },
+       module: {
+         rules: [
+           ...,
+         ],
+       },
+       plugins: [
+         ...,
+       ],
+       mode: "production",
+     };
+     ````
+
+  4. 配置运行命令
+
+     ````json
+     // package.json
+     {
+       // 其他省略
+       "scripts": {
+         "start": "npm run dev",
+         "dev": "npx webpack serve --config ./config/webpack.dev.js",
+         "build": "npx webpack --config ./config/webpack.prod.js"
+       }
+     }
+     ````
+
+
+
 
 

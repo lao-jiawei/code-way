@@ -51,4 +51,45 @@
     }
     ````
 
-  * rules 具体规则
+  * rules 具体规
+
+    | 值               | 描述                                                         |
+    | ---------------- | ------------------------------------------------------------ |
+    | `"off"` 或 `0`   | 关闭规则                                                     |
+    | `"warn"` 或 `1`  | 开启规则，使用警告级别的错误：`warn` (不会导致程序退出)      |
+    | `"error"` 或 `2` | 开启规则，使用错误级别的错误：`error` (当被触发的时候，程序会退出) |
+
+    * 示例
+
+      ````javascript
+      rules: {
+        semi: "error", // 禁止使用分号
+        'array-callback-return': 'warn', // 强制数组方法的回调函数中有 return 语句，否则警告
+        'default-case': [
+          'warn', // 要求 switch 语句中有 default 分支，否则警告
+          { commentPattern: '^no default$' } // 允许在最后注释 no default, 就不会有警告了
+        ],
+        eqeqeq: [
+          'warn', // 强制使用 === 和 !==，否则警告
+          'smart' // https://eslint.bootcss.com/docs/rules/eqeqeq#smart 除了少数情况下不会有警告
+        ],
+      }
+      ````
+
+  * extends 继承
+
+    * 示例：
+
+      ````javascript
+      // 例如在React项目中，我们可以这样写配置
+      module.exports = {
+        extends: ["react-app"],
+        rules: {
+          // 我们的规则会覆盖掉react-app的规则
+          // 所以想要修改规则直接改就是了
+          eqeqeq: ["warn", "smart"],
+        },
+      };
+      ````
+
+      
