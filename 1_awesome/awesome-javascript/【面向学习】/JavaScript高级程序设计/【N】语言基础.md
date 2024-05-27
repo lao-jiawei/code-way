@@ -34,6 +34,29 @@
   parseInt('22.5')//22
   ````
 
+### Q：string.raw是什么？怎么用？
+
+* A：直接获取原始的模板字面量内容(如换行符或 Unicode 字符)，而不是被转 换后的字符表示
+
+  ````javascript
+  console.log(`\u00A9`); // ©
+  console.log(String.raw`\u00A9`); // \u00A9
+  ````
+
+  > 注意：换行符（`\n`）在该方法中不会起作用
+
+  * 使用场景：处理url时，防止被转换成特殊字符。
+
+    ````javascript
+    const path = `C:\Documents\Projects\table.html`
+    String.raw`${path}`
+    //"C:DocumentsProjects able.html"
+    String.raw`C:\Documents\Projects\table.html`
+    //C:\Documents\Projects\table.html
+    ````
+
+    
+
 
 ## Symbol类型
 
@@ -58,6 +81,21 @@
   > Symbol('test')!==Symbol('test')
   > ````
 
+### Q：能不能用object.keys()将其遍历出来？
+
+* A：不能，`Symbol`类型是不可枚举的。而`Object.keys`方法返回对象上的所有可枚举的键属性。
+
+  ````javascript
+  const info = {
+    [Symbol('a')]: 'b'
+  }
+  
+  console.log(info)//{Symbol('a'): 'b'}
+  console.log(Object.keys(info))//[]
+  ````
+
+  
+
 # 操作符
 
 ## 一元操作符
@@ -80,6 +118,29 @@
 * A：从右到左还是从左往右。
 
 # 语句
+
+## return
+
+### Q：return自动添加分号规则是啥？
+
+* A：对于换行return会自动添加分号
+
+  ````javascript
+  function nums(a, b) {
+    if
+    (a > b)
+    console.log('a is bigger')
+    else 
+    console.log('b is bigger')
+    return 
+    a + b
+  }
+  //相当于
+  //return;
+  //a + b
+  ````
+
+  
 
 ## for-in语句
 

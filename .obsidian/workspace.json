@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d7d7606568c5f9f0",
+        "id": "c2665f1f2e4721d0",
         "type": "tabs",
         "children": [
           {
-            "id": "08b4b4e523deff4c",
+            "id": "b3b92612c33aea9b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "babel",
+                "query": "箭头函数",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -134,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,35 +146,35 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "08b4b4e523deff4c",
+  "active": "b3b92612c33aea9b",
   "lastOpenFiles": [
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础.md",
+    "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景.md",
+    "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景~.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】this, call, apply 和 bind.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】执行上下文.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】map, reduce, filter 等高阶函数.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】new 与构造函数, instanceof 与实例.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Object.create 和 Object.assign.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】Promise.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】setTimeout, setInterval 和 requestAnimationFrame.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】闭包.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】变量声明.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】变量提升.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】调用堆栈.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原始类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】设计模式.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】隐式, 显式, 名义和鸭子类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原型继承与原型链.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】对象、类与面向对象编程.md",
+    "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
     "1_awesome/awesome-frontend/【Bable】【N】学习笔记.md",
     "1_awesome/awesome-react/【面向学习】/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
     "1_awesome/awesome-vue/【学习笔记】【尚硅谷】Vue2.0+Vue3.0全套教程丨vuejs从入门到精通.md",
-    "1_awesome/awesome-freecodecamp/【前端开发库】React.md",
-    "1_awesome/awesome-frontend/【Eslint】【N】学习笔记.md",
-    "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
-    "1_awesome/awesome-frontend/【Vite】【N】学习笔记.md",
-    "1_awesome/awesome-frontend/【S】前端优化技巧.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】基本引用类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】客户端存储.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】map, reduce, filter 等高阶函数.md",
-    "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
-    "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
-    "1_awesome/awesome-npm/mockjs/【fnm】【S】包管理工具使用技巧.md",
-    "1_awesome/awesome-terminal/【S】brew使用.md",
-    "1_awesome/awesome-npm/【pnpm】【N】学习笔记~.md",
-    "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
-    "1_awesome/awesome-nodejs/【N】学习笔记.md",
-    "1_awesome/awesome-npm/【npm】【S】使用技巧~.md",
     "1_awesome/awesome-pack",
-    "1_awesome/awesome-cs/【N】操作系统.md",
-    "1_awesome/awesome-javascript/【面向开发】/【S】JS阻止事件冒泡方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/【h5】点击复制到粘贴板.md",
-    "1_awesome/awesome-miniApp/【S】Taro微信小程序开发技巧.md",
-    "1_awesome/awesome-miniApp/【S】抖音小程序开发技巧.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/未命名",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计",

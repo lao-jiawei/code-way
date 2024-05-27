@@ -450,6 +450,174 @@
      };
      ````
 
+## Q：如何配置css兼容性？
+
+* A：
+
+  1. 下载包
+
+     ````bash
+     npm i postcss-loader postcss postcss-preset-env -D
+     ````
+
+  2. 配置生产环境webpack配置
+
+     ````javascript
+     module.exports = {
+       ...,
+       module: {
+         rules: [
+           {
+             // 用来匹配 .css 结尾的文件
+             test: /.css$/,
+             // use 数组里面 Loader 执行顺序是从右到左
+             use: [
+               MiniCssExtractPlugin.loader,
+               "css-loader",
+               {
+                 loader: "postcss-loader",
+                 options: {
+                   postcssOptions: {
+                     plugins: [
+                       "postcss-preset-env", // 能解决大多数样式兼容性问题
+                     ],
+                   },
+                 },
+               },
+             ],
+           },
+           {
+             test: /.less$/,
+             use: [
+               MiniCssExtractPlugin.loader,
+               "css-loader",
+               {
+                 loader: "postcss-loader",
+                 options: {
+                   postcssOptions: {
+                     plugins: [
+                       "postcss-preset-env", // 能解决大多数样式兼容性问题
+                     ],
+                   },
+                 },
+               },
+               "less-loader",
+             ],
+           },
+           {
+             test: /.s[ac]ss$/,
+             use: [
+               MiniCssExtractPlugin.loader,
+               "css-loader",
+               {
+                 loader: "postcss-loader",
+                 options: {
+                   postcssOptions: {
+                     plugins: [
+                       "postcss-preset-env", // 能解决大多数样式兼容性问题
+                     ],
+                   },
+                 },
+               },
+               "sass-loader",
+             ],
+           },
+           {
+             test: /.styl$/,
+             use: [
+               MiniCssExtractPlugin.loader,
+               "css-loader",
+               {
+                 loader: "postcss-loader",
+                 options: {
+                   postcssOptions: {
+                     plugins: [
+                       "postcss-preset-env", // 能解决大多数样式兼容性问题
+                     ],
+                   },
+                 },
+               },
+               "stylus-loader",
+             ],
+           },
+           ...,
+         ],
+       },
+       plugins: [
+         ...,
+       ],
+       mode: "production",
+     };
+     ````
+
+  3. 处理兼容性控制
+
+     ````json
+     //在 package.json 文件中添加 browserslist 来控制样式的兼容性做到什么程度。
+     {
+       ...,
+       "browserslist": ["last 2 version", "> 1%", "not dead"]
+     }
+     ````
+
+## Q：如何处理耦合度高的代码？
+
+* A：封装处理
+
+  ````javascript
+  // 获取处理样式的Loaders
+  const getStyleLoaders = (preProcessor) => {
+    return [
+      MiniCssExtractPlugin.loader,
+      "css-loader",
+      {
+        loader: "postcss-loader",
+        options: {
+          postcssOptions: {
+            plugins: [
+              "postcss-preset-env", // 能解决大多数样式兼容性问题
+            ],
+          },
+        },
+      },
+      preProcessor,
+    ].filter(Boolean);
+  };
+  
+  module.exports = {
+    ...,
+    module: {
+      rules: [
+        {
+          // 用来匹配 .css 结尾的文件
+          test: /.css$/,
+          // use 数组里面 Loader 执行顺序是从右到左
+          use: getStyleLoaders(),
+        },
+        {
+          test: /.less$/,
+          use: getStyleLoaders("less-loader"),
+        },
+        {
+          test: /.s[ac]ss$/,
+          use: getStyleLoaders("sass-loader"),
+        },
+        {
+          test: /.styl$/,
+          use: getStyleLoaders("stylus-loader"),
+        },
+        ...,
+      ],
+    },
+    plugins: [...],
+    mode: "production",
+  };
+  ````
+
+  
+
+
+
 # Plugins
 
 ## Q：如何处理HTML资源？
@@ -487,6 +655,98 @@
      ````
 
   3. 重新打包
+
+## Q：如何单独打包css文件？
+
+* A：
+
+  1. 下载包
+
+     ````bash
+     npm i mini-css-extract-plugin -D
+     ````
+
+  2. 设置生产环境下的webpack配置
+
+     1. 将所以`style-loader`替换成`MiniCssExtractPlugin`
+     2. 插件字段中添加`MiniCssExtractPlugin`配置
+
+     ````javascript
+     const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+     
+     module.exports = {
+       ...,
+       module: {
+         rules: [
+           {
+             // 用来匹配 .css 结尾的文件
+             test: /.css$/,
+             // use 数组里面 Loader 执行顺序是从右到左
+             use: [MiniCssExtractPlugin.loader, "css-loader"],
+           },
+           {
+             test: /.less$/,
+             use: [MiniCssExtractPlugin.loader, "css-loader", "less-loader"],
+           },
+           {
+             test: /.s[ac]ss$/,
+             use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+           },
+           {
+             test: /.styl$/,
+             use: [MiniCssExtractPlugin.loader, "css-loader", "stylus-loader"],
+             ...,
+         ],
+       },
+       plugins: [
+         ...,
+         // 提取css成单独文件
+         new MiniCssExtractPlugin({
+           // 定义输出文件名和目录
+           filename: "static/css/main.css",
+         }),
+       ],
+       mode: "production",
+     };
+     ````
+
+## Q：为什么要对css单独打包？
+
+* A：Css 文件被打包到 js 文件中，当 js 文件加载时，会创建一个 style 标签来生成样式，这样对于网站来说，会出现闪屏现象，用户体验不好
+
+## Q：如何对css打包资源进行压缩？
+
+* A：使用`css-minimizer-webpack-plugin`
+
+  1. 下载包
+
+     ````bash
+     npm i css-minimizer-webpack-plugin -D
+     ````
+
+  2. 配置生产环境webpack配置
+
+     ````javascript
+     const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+     
+     module.exports = {
+       ...,
+       module: {
+         rules: [...],
+       },
+       plugins: [
+         ...,
+         // css压缩
+         new CssMinimizerPlugin(),
+       ],
+       ...,
+       mode: "production",
+     };
+     ````
+
+## Q：如何对html或js打包资源进行压缩？
+
+* A：默认生产模式已经开启了：html 压缩和 js 压缩。所以不需要额外进行配置
 
 # devServer
 

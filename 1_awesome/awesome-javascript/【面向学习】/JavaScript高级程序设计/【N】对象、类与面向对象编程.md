@@ -14,3 +14,14 @@
 
   > 注意：无法删除值类型。
 
+## Q：Object.freeze是什么？怎么用？
+
+* A：`Object.freeze`使得无法添加、删除或修改对象的属性（除非属性的值是另一个对象）。
+
+  ````javascript
+  Object.freeze(targetObj)
+  ````
+
+## Q：如何判断一个对象是否被冻结？
+
+* A：使用`Object.isFrozen`检查
