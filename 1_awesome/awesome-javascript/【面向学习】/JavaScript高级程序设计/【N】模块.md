@@ -59,5 +59,26 @@
     //3
     ````
 
-    
+
+## Q：export const 和export default有何不同？
+
+* A：
+
+  ````javascript
+  // info.js
+  export const name = "Lydia";
+  export const age = 21;
+  export default "I love JavaScript";
+  
+  // index.js
+  import * as info from "./info";
+  console.log(info);
+  //{
+  //  default: "I love JavaScript",
+  //  name: "Lydia",
+  //  age: 21
+  //}
+  ````
+
+  
 

@@ -22,4 +22,11 @@
 
   * `space`：指定缩进用的空白字符串
 
-    
+
+## JSON.parse
+
+### Q：干了什么？
+
+* A：将 JSON 字符串解析为 JavaScript 值。
+
+  

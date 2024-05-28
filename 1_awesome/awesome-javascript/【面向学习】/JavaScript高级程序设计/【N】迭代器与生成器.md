@@ -41,3 +41,23 @@
   * 方法一：return()
   * 方法二：throw()
 
+## Q：yield和yield*有啥区别？
+
+* A：在生成器中，遇到
+
+  * `yield`：则执行`yield`表达式
+
+  * `yield*`：则执行另一个 `Generator` 函数，或可遍历的对象 (如数组)。
+
+    ````javascript
+    function* generatorTwo() {
+      yield* ['a', 'b', 'c'];
+    }
+    
+    const two = generatorTwo()
+    console.log(two.next().value) // 'a'
+    console.log(two.next().value) // 'b'
+    console.log(two.next().value) // 'c'
+    console.log(two.next().value) // undefined
+    ````
+

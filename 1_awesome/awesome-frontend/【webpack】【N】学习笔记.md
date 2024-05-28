@@ -883,7 +883,85 @@
      }
      ````
 
+# 优化方向
 
+## 提升开发体验
+
+### Q：如何使打包后报错可映射源码报错位置？
+
+* A：使用SourceMap工具
+
+  - 开发模式：`cheap-module-source-map`
+    - 优点：打包编译速度快，只包含行映射
+    - 缺点：没有列映射
+
+  ```javascript
+  module.exports = {
+    // 其他省略
+    mode: "development",
+    devtool: "cheap-module-source-map",
+  };
+  ```
+
+  - 生产模式：`source-map`
+    - 优点：包含行/列映射
+    - 缺点：打包编译速度更慢
+
+  ```javascript
+  module.exports = {
+    // 其他省略
+    mode: "production",
+    devtool: "source-map",
+  };
+  ```
+
+## 提升代码构建速度
+
+### Q：如何实现模块热替换？
+
+* A：使用HotModuleReplacement（HMR/热模块替换）
+
+  * 能干嘛？：在程序运行中，替换、添加或删除模块，而无需重新加载整个页面。
+
+  * 怎么用？：
+
+    ````javascript
+    module.exports = {
+      // 其他省略
+      devServer: {
+        host: "localhost", // 启动服务器域名
+        port: "3000", // 启动服务器端口号
+        open: true, // 是否自动打开浏览器
+        hot: true, // 开启HMR功能（只能用于开发环境，生产环境不需要了）
+      },
+    };
+    ````
+
+    > 注意：JS默认不能热模块替换
+    >
+    > * 需要使用 module.hot.accept 使js开启热加载，但是需要先判断是否支持 module.hot
+    >
+    >   ````javascript
+    >   // main.js
+    >   
+    >   // 判断是否支持HMR功能
+    >   if (module.hot) {
+    >     module.hot.accept("./js/count.js", function (count) {
+    >         const result1 = count(2, 1);
+    >         console.log(result1);
+    >     });
+    >     module.hot.accept("./js/sum.js", function (sum) {
+    >         const result2 = sum(1, 2, 3, 4);
+    >         console.log(result2);
+    >     });
+    >   }
+    >   ````
+    >
+    > * 实际开发会使用其他 loader 来解决（比如：vue-loader，react-hot-loader。）加入以上loader自动配置js热加载。
+
+## 减少代码体积
+
+## 优化代码运行性能
 
 
 

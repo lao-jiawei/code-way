@@ -55,7 +55,12 @@
     //C:\Documents\Projects\table.html
     ````
 
-    
+
+### Q：Number.isNaN和isNaN有何区别？
+
+* A：
+  * `Number.isNaN`：检测传递的值是否为数字值并且是否等价于 `NaN`
+  * `isNaN`：检测你传递的值是否一个` number`
 
 
 ## Symbol类型
