@@ -190,4 +190,30 @@ const arrFunc=(arg1,arg2,...args)=>{
   changeAgeAndName()//该调用中的参数x就以person为模版new一个新对象
   ````
 
+
+# 私有变量
+
+## Q：如何在类中声明一个私有变量？
+
+* A：使用`#`为前缀声明私有变量（ES2020）
+
+  ````javascript
+  class Counter {
+    #number = 10
+  
+    increment() {
+      this.#number++
+    }
+  
+    getNum() {
+      return this.#number
+    }
+  }
+  
+  const counter = new Counter()
+  counter.increment()
+  //外部无法访问私有变量
+  console.log(counter.#number)
+  ````
+
   

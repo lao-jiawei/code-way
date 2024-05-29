@@ -21,7 +21,46 @@
   ````javascript
   Object.freeze(targetObj)
   ````
+  
+  > 注意：仅 对对象进行 *浅* 冻结，意味着只有 对象中的 *直接* 属性被冻结。
+  >
+  > ````javascript
+  > const person = {
+  >   name: "Lydia Hallie",
+  >   address: {
+  >     street: "100 Main St"
+  >   }
+  > };
+  > Object.freeze(person);
+  > 
+  > //依旧可以被修改
+  > person.address.street = "101 Main St"
+  > ````
+  >
+  > 
 
 ## Q：如何判断一个对象是否被冻结？
 
 * A：使用`Object.isFrozen`检查
+
+## Q：如何不让对象添加新的属性？
+
+* A：
+
+  * 使用`Object.seal`
+
+    ````javascript
+    const person = { name: "Lydia Hallie" };
+    
+    Object.seal(person);
+    //可以修改其值
+    person.name = "Evan Bacon"
+    //不可以对对象添加新的属性
+    person.age = 21
+    //不可以对对象删除属性，依旧可以访问其值
+    delete person.name
+    //无法修改
+    Object.assign(person, { age: 21 })
+    ````
+
+    

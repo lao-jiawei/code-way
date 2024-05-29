@@ -859,11 +859,11 @@
        },
        module: {
          rules: [
-           ...,
+           //...,
          ],
        },
        plugins: [
-         ...,
+         //...,
        ],
        mode: "production",
      };
@@ -958,6 +958,177 @@
     >   ````
     >
     > * 实际开发会使用其他 loader 来解决（比如：vue-loader，react-hot-loader。）加入以上loader自动配置js热加载。
+
+### Q：如何让文件匹配上一个loader，剩下的rule就不匹配了？
+
+* A：使用`Oneof`
+
+  ````javascript
+  module.exports = {
+    //...,
+    module: {
+      rules: [
+        {
+          oneOf: [
+            {
+              // 用来匹配 .css 结尾的文件
+              test: /.css$/,
+              // use 数组里面 Loader 执行顺序是从右到左
+              use: ["style-loader", "css-loader"],
+            },
+            //...各种rule配置,
+          ],
+        },
+      ],
+    },
+    plugins: [//...
+    ],
+    //...,
+    mode: "development",
+    //...,
+  };
+  ````
+
+  * 优化原理：
+    * 优化前：一个文件通过rules会全部遍历去匹配
+    * 优化后：匹配中其中一个，就不匹配后续rule
+
+### Q：如何排除指定文件打包编译？
+
+* A：使用`include/exclude`
+
+  * `include`：包含，只处理 xxx 文件
+  * `exclude`：排除，除了 xxx 文件以外其他文件都处理
+
+  ````javascript
+  module.exports = {
+    //...,
+    module: {
+        rules: [
+            {
+                oneOf: [
+                    ...,
+                    {
+                        test: /.js$/,
+                        // exclude: /node_modules/, // 排除node_modules代码不编译
+                        include: path.resolve(__dirname, "../src"), // 也可以用包含
+                        loader: "babel-loader",
+                    },
+                ],
+            },
+        ],
+    },
+    // ....
+  };
+  ````
+
+  > 注意：`include/exclude`只能二选一，不能同时存在。
+  >
+  > *  开发时需要使用第三方的库或插件，所有文件都下载到 node_modules 中了。而这些文件是不需要编译可以直接使用的。所以在对 js 文件处理时，要排除 node_modules 下面的文件。
+
+### Q：如何让第二次打包，只对修改的文件进行slint 检查 和 Babel 编译？
+
+* A：使用`cache`
+
+  ````javascript
+  module.exports = {
+    //...,
+    module: {
+      rules: [
+        {
+          oneOf: [
+            // ...
+            {
+                test: /.js$/,
+                // exclude: /node_modules/, // 排除node_modules代码不编译
+                include: path.resolve(__dirname, "../src"), // 也可以用包含
+                loader: "babel-loader",
+                options: {
+                  cacheDirectory: true, // 开启babel编译缓存
+                  cacheCompression: false, // 缓存文件不要压缩
+                },
+            },
+          ],
+        },
+      ],
+    },
+    plugins: [
+      new ESLintWebpackPlugin({
+        // 指定检查文件的根目录
+        context: path.resolve(__dirname, "../src"),
+        exclude: "node_modules", // 默认值
+        cache: true, // 开启缓存
+        // 缓存目录
+        cacheLocation: path.resolve(
+            __dirname,
+            "../node_modules/.cache/.eslintcache"
+        ),
+      }),
+      // ... 
+    ],
+    // ...
+  };
+  ````
+
+  * 发生了什么？：每次打包时，没有修改的文件可以缓存之前的 Eslint 检查 和 Babel 编译结果，这样第二次打包时速度就会更快了。
+
+### Q：如何开启多线程进行打包？
+
+* A：使用`thead`
+
+  * 如何使用？
+
+    1. 下载包
+
+       ````bash
+       npm i thread-loader -D
+       ````
+
+    2. 修改webpack配置文件
+
+       ````javascript
+       const os = require("os"); // 添加此代码
+       //...,
+       const TerserPlugin = require("terser-webpack-plugin");
+       
+       // cpu核数
+       const threads = os.cpus().length; // 添加此代码
+       
+       module.exports = {
+         //...,
+         module: {...},
+         plugins: [
+           new ESLintWebpackPlugin({
+             // 指定检查文件的根目录
+             context: path.resolve(__dirname, "../src"),
+             exclude: "node_modules", // 默认值
+             cache: true, // 开启缓存
+             // 缓存目录
+             cacheLocation: path.resolve(
+                 __dirname,
+                 "../node_modules/.cache/.eslintcache"
+             ),
+             // 添加此代码 ESlint
+             threads, // 开启多进程
+           }),
+         ],
+         // CSS压缩也可以开启多进程
+         optimization: {
+           minimize: true,
+           minimizer: [
+             // css压缩也可以写到optimization.minimizer里面，效果一样的
+             new CssMinimizerPlugin(),
+             // 当生产模式会默认开启TerserPlugin，但是我们需要进行其他配置，就要重新写了
+             new TerserPlugin({
+                 parallel: threads // 开启多进程
+             })
+           ],
+         },
+         // ...
+       };
+       ````
+
+  
 
 ## 减少代码体积
 
