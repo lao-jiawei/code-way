@@ -1132,6 +1132,66 @@
 
 ## 减少代码体积
 
+### Q：如何实现使用什么库，打包什么库？
+
+* A：使用`TreeShaking`
+  * 如何使用？：检查是否使用`ES Module`，Webpack 已经默认开启了这个功能，无需其他配置。
+
+### Q：如何处理babel为编译的每个文件都插入了辅助代码，导致打包代码体积过大？
+
+* A：使用`@babel/plugin-transform-runtime`
+
+  * Q：为什么babel会导致代码提交过大？
+
+    * A：Babel 对一些公共方法使用了非常小的辅助代码，比如 `_extend`。默认情况下会被添加到每一个需要它的文件中。
+
+  * Q：能干嘛？
+
+    * A：禁用了 Babel 自动对每个文件的 runtime 注入，而是引入 `@babel/plugin-transform-runtime` 并且使所有辅助代码从这里引用。
+
+  * Q：如何使用？
+
+    1. 下载包
+
+       ````bash
+       npm i @babel/plugin-transform-runtime -D
+       ````
+
+    2. 设置（开发｜生产）配置文件
+
+       ````json
+       //rule设置项
+       {
+         test: /.js$/,
+             // exclude: /node_modules/, // 排除node_modules代码不编译
+             include: path.resolve(__dirname, "../src"), // 也可以用包含
+                 use: [
+                     {
+                         loader: "thread-loader", // 开启多进程
+                         options: {
+                             workers: threads, // 数量
+                         },
+                     },
+                     {
+                         loader: "babel-loader",
+                         options: {
+                             cacheDirectory: true, // 开启babel编译缓存
+                             cacheCompression: false, // 缓存文件不要压缩
+                             plugins: ["@babel/plugin-transform-runtime"], // 减少代码体积
+                         },
+                     },
+                 ],
+       }
+       ````
+
+### Q：如何对静态图片进行压缩处理？
+
+* A：
+
+
+
+
+
 ## 优化代码运行性能
 
 

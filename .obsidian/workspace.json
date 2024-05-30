@@ -120,7 +120,7 @@
             }
           },
           {
-            "id": "2bb249c7af7d2fdc",
+            "id": "bd16d5598794e20b",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -130,7 +130,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -148,6 +148,9 @@
   },
   "active": "cbb20885c1938322",
   "lastOpenFiles": [
+    "1_awesome/awesome-git/【S】如何参与代码贡献.md",
+    "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+    "1_awesome/awesome-opensource",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】== vs ===, typeof vs instanceof.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原型继承与原型链.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
@@ -161,7 +164,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】函数.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】对象、类与面向对象编程~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】基本引用类型.md",
-    "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】模块.md",
     "1_awesome/awesome-javascript/【面向学习】/【N】ES6相关问题.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】变量提升.md",
@@ -173,7 +175,6 @@
     "1_awesome/awesome-javascript/【面向开发】/遍历数组array方法.md",
     "1_awesome/awesome-javascript/【面向开发】/函数的声明和调用.md",
     "1_awesome/awesome-javascript/【面向开发】/创建数组array的方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/箭头函数的语法和使用场景.md",
     "1_awesome/awesome-pack",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/未命名",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
@@ -182,7 +183,6 @@
     "1_awesome/awesome-react/【面向开发】",
     "1_awesome/awesome-regExp/未命名",
     "1_awesome/awesome-regExp",
-    "1_awesome/awesome-html&css/html",
-    "1_awesome/awesome-html&css/css"
+    "1_awesome/awesome-html&css/html"
   ]
 }
