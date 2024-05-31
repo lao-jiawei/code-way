@@ -88,3 +88,32 @@
   * `reused`：pnpm 从缓存中复用的依赖项的数量。
   * `downloaded`：从远程仓库下载的依赖项的数量。
   * `added`：将下载的依赖项添加到项目中的数量。
+
+# bug处理
+
+## bug：mac系统全局安装找不到全局路径？
+
+![](https://gitee.com/lao-jiawei/photo-gallery/raw/master/images/pnpm/20240531092133.png)
+
+* 处理方法
+
+  1. 终端运行pnpm setup命令
+
+  2. 找到用户的主目录下的.zshrc 文件（注意：该文件默认隐藏，可以用Cmd + Shift +。查看）
+
+  3. 修改`.zshrc`
+
+     ````bash
+     # pnpm
+     export PNPM_HOME="/Users/xxx/Library/pnpm"
+     case ":$PATH:" in
+       *":$PNPM_HOME:"*) ;;
+       *) export PATH="$PNPM_HOME:$PATH" ;;
+     esac
+     ++ export PATH="/Users/xxx/Library/pnpm/bin:$PATH"
+     # pnpm end
+     ````
+
+     > （XXX:替换为自己的用户的主目录）
+
+  4. 终端运行**source ~/.zshrc**命令

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md",
                 "mode": "preview",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "箭头函数",
+                "query": "执行栈",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,12 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md"
+                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md"
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -148,13 +148,27 @@
   },
   "active": "cbb20885c1938322",
   "lastOpenFiles": [
-    "1_awesome/awesome-git/【S】如何参与代码贡献.md",
+    "1_awesome/awesome-cs/计算机网络/【N】计算机网络.md",
+    "1_awesome/awesome-cs/计算机网络",
+    "1_awesome/awesome-cs/操作系统",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】客户端存储.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】函数作用域、块级作用域和词法作用域.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】调用堆栈.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】变量提升.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】变量声明.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】闭包.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原始类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】隐式, 显式, 名义和鸭子类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原型继承与原型链.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
+    "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+    "1_awesome/awesome-npm/【pnpm】【N】学习笔记~.md",
     "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+    "1_awesome/awesome-git/【S】如何参与代码贡献.md",
     "1_awesome/awesome-opensource",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】== vs ===, typeof vs instanceof.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】原型继承与原型链.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】客户端存储.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】变量、作用域与内存.md",
@@ -163,26 +177,12 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】对象、类与面向对象编程.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】函数.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】对象、类与面向对象编程~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】基本引用类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】模块.md",
-    "1_awesome/awesome-javascript/【面向学习】/【N】ES6相关问题.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】变量提升.md",
-    "1_awesome/awesome-javascript/【面向学习】/【笔记】【JavaScript】RegExp对象.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/JavaScript高级程序设计~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JSON.md",
-    "1_awesome/awesome-javascript/【面向开发】/遍历数组array方法.md",
-    "1_awesome/awesome-javascript/【面向开发】/函数的声明和调用.md",
-    "1_awesome/awesome-javascript/【面向开发】/创建数组array的方法.md",
     "1_awesome/awesome-pack",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/未命名",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计",
     "1_awesome/awesome-react/【面向学习】",
     "1_awesome/awesome-react/【面向开发】",
-    "1_awesome/awesome-regExp/未命名",
-    "1_awesome/awesome-regExp",
-    "1_awesome/awesome-html&css/html"
+    "1_awesome/awesome-regExp/未命名"
   ]
 }
