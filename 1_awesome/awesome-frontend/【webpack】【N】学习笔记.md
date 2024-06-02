@@ -1186,13 +1186,357 @@
 
 ### Q：如何对静态图片进行压缩处理？
 
-* A：
+* A：使用`image-minimizer-webpack-plugin`插件
 
+  1. 下载包
 
+     ````bash
+     npm i image-minimizer-webpack-plugin imagemin -D
+     ````
 
+     * 模式选择
 
+       * 无损压缩
+
+         ````bash
+         npm install imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo -D
+         ````
+
+       * 有损压缩
+
+         ````bash
+         npm install imagemin-gifsicle imagemin-mozjpeg imagemin-pngquant imagemin-svgo -D
+         ````
+
+  2. 设置webpack配置
+
+     ````javascript
+     const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+     
+     optimization: {
+       minimizer: [
+         // 压缩图片
+         new ImageMinimizerPlugin({
+           minimizer: {
+             implementation: ImageMinimizerPlugin.imageminGenerate,
+             options: {
+               plugins: [
+                   ["gifsicle", { interlaced: true }],
+                   ["jpegtran", { progressive: true }],
+                   ["optipng", { optimizationLevel: 5 }],
+                   [                            "svgo",                            {                                plugins: [                                    "preset-default",                                    "prefixIds",                                    {                                        name: "sortAttrs",                                        params: {                                            xmlnsOrder: "alphabetical",                                        },                                    },                                ],
+                       },
+                   ],
+                 ],
+             },
+           },
+         }),
+       ],
+     },
+     ````
+
+     
 
 ## 优化代码运行性能
+
+### Q：如何实现代码按需加载打包？
+
+* A：代码分割（Code Split）处理。
+
+  * Q：是什么？
+
+    * A：
+      * 分割文件：将打包生成的文件进行分割，生成多个 js 文件。
+      * 按需加载：需要哪个文件就加载哪个文件。
+
+  * Q：怎么做？
+
+    * 方法一：使用多入口分割打包文件
+
+      ````javascript
+      module.exports = {
+        // 单入口
+        // entry: './src/main.js',
+        // 多入口
+        entry: {
+          main: "./src/main.js",
+          app: "./src/app.js",
+          //...
+          //[打包名]:[目标文件路径]
+        },
+        output: {
+          path: path.resolve(__dirname, "./dist"),
+          // [name]是webpack命名规则，使用chunk的name作为输出的文件名。
+          // 什么是chunk？打包的资源就是chunk，输出出去叫bundle。
+          // chunk的name是啥呢？ 比如： entry中xxx: "./src/xxx.js", name就是xxx。注意是前面的xxx，和文件名无关。
+          // 为什么需要这样命名呢？如果还是之前写法main.js，那么打包生成两个js文件都会叫做main.js会发生覆盖。(实际上会直接报错的)
+          filename: "js/[name].js",
+          clear: true,
+        },
+        plugins: [
+          new HtmlWebpackPlugin({
+            template: "./public/index.html",
+          }),
+        ],
+        mode: "production",
+      };
+      ````
+
+### Q：多入口打包时，如何处理公共模块？
+
+* A：设置代码分割配置
+
+  ````javascript
+  // webpack.config.js
+  
+  module.exports = {
+      // 单入口
+      // entry: './src/main.js',
+      // 多入口
+      entry: {
+          main: "./src/main.js",
+          app: "./src/app.js",
+      },
+      output: {
+          path: path.resolve(__dirname, "./dist"),
+          filename: "js/[name].js",
+          clean: true,
+      },
+      plugins: [
+        //...
+      ],
+      mode: "production",
+      // ==========以下为新增代码=============
+      optimization: {
+          // 代码分割配置
+          splitChunks: {
+              chunks: "all", // 对所有模块都进行分割
+              // 以下是默认值
+              // minSize: 20000, // 分割代码最小的大小
+              // minRemainingSize: 0, // 类似于minSize，最后确保提取的文件大小不能为0
+              // minChunks: 1, // 至少被引用的次数，满足条件才会代码分割
+              // maxAsyncRequests: 30, // 按需加载时并行加载的文件的最大数量
+              // maxInitialRequests: 30, // 入口js文件最大并行请求数量
+              // enforceSizeThreshold: 50000, // 超过50kb一定会单独打包（此时会忽略minRemainingSize、maxAsyncRequests、maxInitialRequests）
+              // cacheGroups: { // 组，哪些模块要打包到一个组
+              //   defaultVendors: { // 组名
+              //     test: /[\/]node_modules[\/]/, // 需要打包到一起的模块
+              //     priority: -10, // 权重（越大越高）
+              //     reuseExistingChunk: true, // 如果当前 chunk 包含已从主 bundle 中拆分出的模块，则它将被重用，而不是生成新的模块
+              //   },
+              //   default: { // 其他没有写的配置会使用上面的默认值
+              //     minChunks: 2, // 这里的minChunks权重更大
+              //     priority: -20,
+              //     reuseExistingChunk: true,
+              //   },
+              // },
+              // 修改配置
+              cacheGroups: {
+                  // 组，哪些模块要打包到一个组
+                  // defaultVendors: { // 组名
+                  //   test: /[\/]node_modules[\/]/, // 需要打包到一起的模块
+                  //   priority: -10, // 权重（越大越高）
+                  //   reuseExistingChunk: true, // 如果当前 chunk 包含已从主 bundle 中拆分出的模块，则它将被重用，而不是生成新的模块
+                  // },
+                  default: {
+                      // 其他没有写的配置会使用上面的默认值
+                      minSize: 0, // 我们定义的文件体积太小了，所以要改打包的最小文件体积
+                      minChunks: 2,
+                      priority: -20,
+                      reuseExistingChunk: true,
+                  },
+              },
+          },
+  
+      },
+  };
+  ````
+
+  > Q：为什么要处理公共模块？
+  >
+  > * A：若不处理，每一个打包文件都会对公共模块进行重复打包，导致代码体积变大。
+
+### Q：多入口打包，如何对js文件进行按需加载？
+
+* A：对js文件使用动态导入
+
+  ````javascript
+  document.getElementById("btn").onclick = function () {
+    // 动态导入 --> 实现按需加载
+    // 即使只被引用了一次，也会代码分割
+    import("{js文件路径}").then(({ func }) => {
+      func();
+    });
+  };
+  ````
+
+### Q：单入口打包，如何对js文件进行按需加载？
+
+* A：
+
+  1. 设置webpack文件
+
+     ````javascript
+     const path = require("path");
+     const HtmlWebpackPlugin = require("html-webpack-plugin");
+     module.exports = {
+       entry: "./src/main.js",
+       output: {
+         path: path.resolve(__dirname, "./dist"),
+         filename: "js/[name].js",
+         clean: true,
+       },
+       plugins: [
+         new HtmlWebpackPlugin({
+           template: "./public/index.html",
+         }),
+       ],
+       mode: "production",
+       optimization: {
+         // 代码分割配置
+         splitChunks: {
+           chunks: "all", // 对所有模块都进行分割
+       },
+     };
+     ````
+
+  2. 引入`eslint`动态导入
+
+     ````bash
+     npm i eslint-plugin-import -D
+     ````
+
+  3. 配置`.eslintrc.js`文件，添加`import`插件
+
+     ````javascript
+     // .eslintrc.js
+     module.exports = {
+       // 继承 Eslint 规则
+       extends: ["eslint:recommended"],
+       env: {
+         node: true, // 启用node中全局变量
+         browser: true, // 启用浏览器中全局变量
+       },
+       plugins: ["import"], // 解决动态导入import语法报错问题 --> 实际使用eslint-plugin-import的规则解决的
+       parserOptions: {
+         ecmaVersion: 6,
+         sourceType: "module",
+       },
+       rules: {
+         "no-var": 2, // 不能使用 var 定义变量
+       },
+     };
+     ````
+
+  4. 将js改为动态引入
+
+     ````javascript
+     document.getElementById("btn").onclick = function () {
+       // 动态导入 --> 实现按需加载
+       // 即使只被引用了一次，也会代码分割
+       import("{js文件路径}").then(({ func }) => {
+         func();
+       });
+     };
+     ````
+
+### Q：如何处理代码分割导致模块名不统一问题？
+
+* A：
+
+  1. 对js文件中使用动导入位置追加魔法命名
+
+     ````javascript
+     document.getElementById("btn").onclick = function () {
+       // 动态导入 --> 实现按需加载
+       // 即使只被引用了一次，也会代码分割
+       import(/*webpackChunkName:"{指定的打包文件}"*/"{js文件路径}").then(({ func }) => {
+         func();
+       });
+     };
+     ````
+
+  2. 修改webpack配置，添加`chunkFilename`、`assetModuleFilename`配置
+
+     ````javascript
+     //webpack.config.js
+     const path = require("path");
+     const HtmlWebpackPlugin = require("html-webpack-plugin");
+     module.exports = {
+       entry: "./src/main.js",
+       output: {
+         path: path.resolve(__dirname, "./dist"),
+         filename: "js/[name].js",
+         chunkFilename: "static/js/[name].chunk.js", // 动态导入输出资源命名方式
+         assetModuleFilename: "static/media/[name].[hash][ext]", // 图片、字体等资源命名方式（注意用hash）
+         clean: true,
+       },
+       plugins: [
+         new HtmlWebpackPlugin({
+           template: "./public/index.html",
+         }),
+       ],
+       mode: "production",
+       optimization: {
+         // 代码分割配置
+         splitChunks: {
+           chunks: "all", // 对所有模块都进行分割
+       },
+     };
+     ````
+
+### Q：如何实现在浏览器空闲时间，加载后续需要使用的资源？
+
+* A：使用`Preload / Prefetch`技术
+
+  > Q：相同点？
+  >
+  > * A：
+  >   * 都只会加载资源，并不执行。
+  >   * 都有缓存。
+  >
+  > Q：区别是什么？
+  >
+  > * A：
+  >
+  >   |            | Preload                        | Prefeth                                                    |
+  >   | ---------- | ------------------------------ | ---------------------------------------------------------- |
+  >   | 是什么？   | 告诉浏览器立即加载资源。       | 告诉浏览器在空闲时才开始加载资源。                         |
+  >   | 加载优先级 | 高                             | 低                                                         |
+  >   | 加载资源   | 只能加载当前页面需要使用的资源 | 可以加载当前页面资源，也可以加载下一个页面需要使用的资源。 |
+  >
+  > Q：缺点是啥？
+  >
+  > * A：兼容性较差。
+
+  1. 下载包
+
+     ````bash
+     npm i @vue/preload-webpack-plugin -D
+     ````
+
+  2. 设置webpack文件
+
+     ````javascript
+     const PreloadWebpackPlugin = require("@vue/preload-webpack-plugin");
+     {
+       plugins: [
+         new PreloadWebpackPlugin({
+           rel: "preload", // preload兼容性更好
+           as: "script",
+           // rel: 'prefetch' // prefetch兼容性更差
+         }),
+       ]
+     }
+     ````
+
+     
+
+
+
+
+
+### 
 
 
 

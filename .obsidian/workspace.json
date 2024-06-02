@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-os/操作系统/【N】使用操作系统.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md",
+                "file": "1_awesome/awesome-os/操作系统/【N】使用操作系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md",
+                "file": "1_awesome/awesome-os/操作系统/【N】使用操作系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-cs/操作系统/【N】使用操作系统.md"
+                "file": "1_awesome/awesome-os/操作系统/【N】使用操作系统.md"
               }
             }
           }
@@ -146,11 +146,17 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cbb20885c1938322",
+  "active": "c01b937b1daa1f29",
   "lastOpenFiles": [
+    "1_awesome/awesome-os/【MacOS】【S】使用技巧.md",
+    "1_awesome/awesome-os/【Linux】【S】使用技巧.md",
+    "1_awesome/awesome-os/【WindowOS】【S】使用技巧.md",
+    "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+    "1_awesome/awesome-frontend/【Vite】【N】学习笔记.md",
+    "1_awesome/awesome-os/操作系统/【N】使用操作系统.md",
     "1_awesome/awesome-cs/计算机网络/【N】计算机网络.md",
     "1_awesome/awesome-cs/计算机网络",
-    "1_awesome/awesome-cs/操作系统",
+    "1_awesome/awesome-os/操作系统",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】客户端存储.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】消息队列和事件循环.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】函数作用域、块级作用域和词法作用域.md",
@@ -164,7 +170,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】JavaScript 引擎.md",
     "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
     "1_awesome/awesome-npm/【pnpm】【N】学习笔记~.md",
-    "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
     "1_awesome/awesome-git/【S】如何参与代码贡献.md",
     "1_awesome/awesome-opensource",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念/【N】== vs ===, typeof vs instanceof.md",
@@ -172,11 +177,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【学习笔记】【JavaScript】JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】变量、作用域与内存.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】代理与反射.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】迭代器与生成器.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】对象、类与面向对象编程.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】函数.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】对象、类与面向对象编程~.md",
     "1_awesome/awesome-pack",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/未命名",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript工程师都应懂的33个概念",
