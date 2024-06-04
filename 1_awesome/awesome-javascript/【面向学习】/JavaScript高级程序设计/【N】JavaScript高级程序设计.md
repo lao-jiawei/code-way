@@ -250,51 +250,6 @@
 
 * 检测：用字面量检测
 
-## 流控制语句
-
-### 语句
-
-#### for-in
-
-* 严格的迭代语句，用于枚举对象中的非符号属性
-
-  ````javascript
-  for(const propName in window){
-    document.write(propName)
-  }
-  ````
-
-  * 每次执行循环，都会给变量赋值。
-
-* 遍历对象时
-
-  * 不能保证返回对象的属性的顺序
-  * null或undefined不执行循环体
-  * 会遍历整个对象甚至原型中的属性
-
-
-#### for-of
-
-* 严格的迭代语句，用于遍历可迭代的对象元素
-
-  ````javascript
-  for(const num of [1,2,3,4]){
-    console.log(num);
-  }
-  ````
-
-  *  循环会按照可迭代对象的 next()方法产生值的顺序迭代元素
-
-# 第6章 集合引用类型
-
-【本章内容】
-
-- [ ] 对象
-- [ ] 数组与定型数组
-- [ ] Map、WeakMap、Set以及WeakSet类型
-
-* * 
-
 
 
 # 第10章 函数

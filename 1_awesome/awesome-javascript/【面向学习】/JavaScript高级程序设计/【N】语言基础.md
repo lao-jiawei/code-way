@@ -151,6 +151,26 @@
 
 ### Q：能干嘛？
 
-* A：用于枚举对象中的非符号（Symbol）键的属性
+* A：用于枚举对象中的非符号（Symbol）键的属性（即：遍历key）
 
-  > 注意：需要枚举的对象是null或undefined，则不执行循环体。
+  > 注意：
+  >
+  > * 需要枚举的对象是null或undefined，则不执行循环体。
+  > * 会遍历整个对象甚至原型中的属性
+  > * 不能保证返回对象的属性的顺序
+
+## for-of语句
+
+### Q：能干嘛？
+
+* A：用于遍历可迭代对象的元素（即：遍历value）
+
+  > 支持for-awit-of
+  >
+  > ````javascript
+  > async fun(){
+  >     for(let ele of arr){
+  >       await request(ele);
+  >     }
+  > }
+  > ````
