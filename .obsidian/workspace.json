@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-java/0_基础语法/【N】数组.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
+                "file": "1_awesome/awesome-java/0_基础语法/【N】数组.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
+                "file": "1_awesome/awesome-java/0_基础语法/【N】数组.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md"
+                "file": "1_awesome/awesome-java/0_基础语法/【N】数组.md"
               }
             }
           }
@@ -148,6 +148,11 @@
   },
   "active": "d9f983267f21e333",
   "lastOpenFiles": [
+    "1_awesome/awesome-java/0_基础语法/【N】循环结构.md",
+    "1_awesome/awesome-java/0_基础语法/【N】数组.md",
+    "1_awesome/awesome-java/0_基础语法/【N】基础语法.md",
+    "1_awesome/awesome-java/0_基础语法/【N】基本数据类型.md",
+    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
     "1_awesome/awesome-react/【面向学习】/【N】【React】学习笔记~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础.md",
@@ -156,7 +161,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JavaScript高级程序设计~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】模块.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】客户端存储.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】基本引用类型.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】函数.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】对象、类与面向对象编程.md",
@@ -167,17 +171,13 @@
     "1_awesome/awesome-react/【面向学习】/【学习笔记】【React】【尚硅谷】React技术全家桶全套完整版（零基础入门到精通男神天禹老师亲授）.md",
     "1_awesome/awesome-react/【面向学习】/【N】React官网文档.md",
     "1_awesome/awesome-react/【面向学习】/【Ahook】【SCN】Ahook库源码.md",
-    "1_awesome/awesome-java/0_基础语法/【N】基础语法.md",
-    "1_awesome/awesome-java/0_基础语法/【N】基本数据类型.md",
     "1_awesome/awesome-java/1_面向对象/【N】接口.md",
     "1_awesome/awesome-java/1_面向对象/【N】接口~.md",
     "1_awesome/awesome-java/1_面向对象/【N】继承.md",
-    "1_awesome/awesome-java/1_面向对象/【N】继承~.md",
     "1_awesome/awesome-java/面向对象/未命名",
     "1_awesome/awesome-java/2_高级技巧",
     "1_awesome/awesome-java/1_面向对象",
     "1_awesome/awesome-java/0_基础语法",
-    "1_awesome/awesome-os/操作系统/【N】使用操作系统.md",
     "1_awesome/awesome-cs/计算机网络",
     "1_awesome/awesome-os/操作系统",
     "1_awesome/awesome-opensource",
