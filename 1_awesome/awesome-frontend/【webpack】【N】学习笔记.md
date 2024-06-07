@@ -1235,7 +1235,50 @@
      },
      ````
 
+
+### Q：如何忽略源码中的注释、日志进行打包？
+
+* A：使用`TerserPlugin`插件
+
+  1. 下载包
+
+     ````bash
+     npm install terser-webpack-plugin -D
+     ````
+
+  2. 设置配置
+
+     ````javascript
+     const TerserPlugin = require("terser-webpack-plugin");
      
+     module.exports = {
+       // ... 其他配置 ...
+       optimization: {
+         minimize: true,
+         minimizer: [
+           new TerserPlugin({
+             parallel: true,
+             terserOptions: {
+               compress: {
+                 drop_console: true, // 移除所有console相关代码
+                 drop_debugger: true, // 移除自动断点功能
+                 pure_funcs: ["console.log", "console.error"], // 配置移除指定的指令，如console.log, alert等
+               },
+               format: {
+                 comments: false, // 移除注释
+               },
+             },
+             extractComments: false, // 不提取注释到单独文件
+           })
+         ],
+       },
+       // ... 其他配置 ...
+     };
+     ````
+
+     
+
+  
 
 ## 优化代码运行性能
 
