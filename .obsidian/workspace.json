@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "711bbaaf14a44232",
+        "id": "a911140a60ab480a",
         "type": "tabs",
         "children": [
           {
-            "id": "331a70625c2fa258",
+            "id": "6fbaa1f0ba1f07aa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1_awesome/awesome-frontend/【jest】【N】初次使用.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-frontend/【jest】【N】初次使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-frontend/【jest】【N】初次使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "1_awesome/awesome-frontend/【jest】【N】初次使用.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -146,11 +138,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "331a70625c2fa258",
+  "active": "6fbaa1f0ba1f07aa",
   "lastOpenFiles": [
+    "1_awesome/awesome-frontend/【jest】【N】初次使用.md",
     "1_awesome/awesome-frontend/【S】前端优化技巧.md",
     "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
-    "1_awesome/awesome-frontend/【jest】【N】初次使用.md",
     "README.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】工作者线程.md",
     "1_awesome/awesome-cs/计算机网络/【N】计算机网络.md",
