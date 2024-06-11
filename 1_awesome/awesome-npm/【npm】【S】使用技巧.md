@@ -29,7 +29,7 @@
     | latest | 最新版本 |
     | canary |          |
 
-## Q：如何清除项目中的node_modules´
+## Q：如何清除项目中的node_modules?
 
 * A：
 
@@ -52,4 +52,28 @@
   npm get config registry
   ````
 
+
+## Q：如何查看本地依赖列表？
+
+* A：
+
+  ````bash
+  #当前
+  npm list
+  #查看全局
+  npm list -g <suffix>
+  ````
+
+  * `suffix`：后缀
   
+    | 后缀 | 描述 |
+    | ---- | ---- |
+    |      |      |
+  
+    
+
+# 自封装包相关
+
+## Q：如何产生临时依赖包，在本地测试包的功能性？
+
+* A：使用`npm link`产生临时包，在测试项目中使用`npm link <包名>`引入临时包
