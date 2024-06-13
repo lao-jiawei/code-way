@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
-                "mode": "preview",
+                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md"
+                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md"
               }
             }
           }
@@ -148,8 +148,11 @@
   },
   "active": "6fbaa1f0ba1f07aa",
   "lastOpenFiles": [
-    "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
+    "1_awesome/awesome-npm/【npm】错误码处理.md",
+    "1_awesome/awesome-os/【MacOS】【S】使用技巧.md",
+    "1_awesome/awesome-os/【MacOS】【S】使用技巧~.md",
     "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
+    "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
     "1_awesome/awesome-frontend/【jest】【N】初次使用.md",
     "1_awesome/awesome-frontend/【S】前端优化技巧.md",
     "README.md",
@@ -171,9 +174,6 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础~.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JavaScript高级程序设计.md",
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JavaScript高级程序设计~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】模块.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】客户端存储.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】基本引用类型.md",
     "1_awesome/awesome-java/面向对象/未命名",
     "1_awesome/awesome-java/2_高级技巧",
     "1_awesome/awesome-java/1_面向对象",

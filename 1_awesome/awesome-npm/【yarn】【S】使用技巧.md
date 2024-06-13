@@ -12,3 +12,9 @@ yarn add {包名}@{版本}
 yarn add --dev {依赖名}
 ````
 
+## 移除依赖
+
+````bash
+yarn remove {包名}
+````
+
