@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a911140a60ab480a",
+        "id": "c35614d496e9a081",
         "type": "tabs",
         "children": [
           {
-            "id": "6fbaa1f0ba1f07aa",
+            "id": "7938eb5df67363a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
-                "mode": "source",
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1_awesome/awesome-npm/【yarn】【S】使用技巧.md"
+                "file": "1_awesome/awesome-npm/【npm】【S】使用技巧.md"
               }
             }
           }
@@ -146,9 +146,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6fbaa1f0ba1f07aa",
+  "active": "7938eb5df67363a6",
   "lastOpenFiles": [
     "1_awesome/awesome-npm/【npm】错误码处理.md",
+    "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
+    "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
+    "1_awesome/awesome-git/【S】gh-page使用技巧.md",
+    "1_awesome/awesome-git/【S】github使用技巧.md",
+    "1_awesome/awesome-git/使用技巧~.md",
+    "1_awesome/awesome-git/【S】commit规范.md",
+    "1_awesome/awesome-git/未命名.md",
+    "1_awesome/awesome-git/【笔记】【git】【狂神说Java】Git最新教程通俗易懂 -学习笔记.md",
+    "1_awesome/awesome-git/【github】【S】markdown文件内联跳转.md",
+    "1_awesome/awesome-git/【S】gitignore设置.md",
+    "1_awesome/awesome-frontend/【Vite】【N】学习笔记.md",
     "1_awesome/awesome-os/【MacOS】【S】使用技巧.md",
     "1_awesome/awesome-os/【MacOS】【S】使用技巧~.md",
     "1_awesome/awesome-frontend/【webpack】【N】学习笔记.md",
@@ -159,21 +170,10 @@
     "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】工作者线程.md",
     "1_awesome/awesome-cs/计算机网络/【N】计算机网络.md",
     "1_awesome/awesome-npm/【fnm】node版本管理工具.md",
-    "1_awesome/awesome-npm/【pnpm】【N】学习笔记.md",
-    "1_awesome/awesome-npm/【yarn】【S】使用技巧.md",
     "1_awesome/awesome-terminal/【S】zsh使用.md",
     "1_awesome/awesome-terminal/【S】zsh使用~.md",
     "1_awesome/awesome-java/0_基础语法/【N】数组.md",
     "1_awesome/awesome-java/0_基础语法/【N】循环结构.md",
-    "1_awesome/awesome-java/0_基础语法/【N】基础语法.md",
-    "1_awesome/awesome-java/0_基础语法/【N】基本数据类型.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型.md",
-    "1_awesome/awesome-react/【面向学习】/【N】【React】学习笔记~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】集合引用类型~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】语言基础~.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JavaScript高级程序设计.md",
-    "1_awesome/awesome-javascript/【面向学习】/JavaScript高级程序设计/【N】JavaScript高级程序设计~.md",
     "1_awesome/awesome-java/面向对象/未命名",
     "1_awesome/awesome-java/2_高级技巧",
     "1_awesome/awesome-java/1_面向对象",
