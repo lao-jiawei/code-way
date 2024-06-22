@@ -2248,21 +2248,19 @@ $.ajax({url:"test.html",context:document.body,success:function(){
 
 [ant.design](https://ant.design/components/overview-cn/)
 
-body>
-<a href="" id = "test-jquery">点我</a>
-<script>
-    //选择器就是css选择器
-    $('#test-jquery').click(function(){
-        alert('hello,jQuery!');
-    });
-</script>
+````html
+<body>
+  <a href="" id = "test-jquery">点我</a>
+    <script>
+      //选择器就是css选择器
+      $('#test-jquery').click(function(){
+          alert('hello,jQuery!');
+      });
+  </script>
 </body>
-</html>
 ````
 
-<br>
-
-> 选择器
+>选择器
 
 ````javascript
 //原生js，选择器少，麻烦不好记

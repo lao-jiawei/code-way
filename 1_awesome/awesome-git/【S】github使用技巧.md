@@ -172,7 +172,7 @@ git rm --cached {创建的子仓库文件名}
 1. **克隆远程仓库**
 
    ````shell  
-   $ git clone
+   git clone
    ````
 
 2. **拖动要上传的文件到克隆的远程仓库内**
@@ -180,7 +180,7 @@ git rm --cached {创建的子仓库文件名}
 3. **把文件夹所有文件添加到仓库**
 
    ````shell
-   $ git add .
+   git add .
    ````
 
    【拓展】**add命令的使用**
@@ -213,3 +213,30 @@ git rm --cached {创建的子仓库文件名}
 
 * mac：`command`+`k`
 
+# tag相关
+
+## Q：如何添加tag
+
+* A：
+
+  1. 打标签
+
+     ````bash
+     git tag <标签名>
+     ````
+
+  2. 提交标签
+
+     ````bash
+     git push origin <标签名>
+     ````
+
+  3. 删除标签
+
+     ````bash
+     git tag -d <标签名>
+     ````
+
+     
+
+  

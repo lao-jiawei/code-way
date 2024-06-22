@@ -99,4 +99,26 @@
      npm unlink <依赖包名>
      ````
 
-     
+
+# Package.json相关
+
+## Q：各字段含义？
+
+* A：
+
+  | 字段        | 描述                 |
+  | ----------- | -------------------- |
+  | name        | 包名，必须要独一无二 |
+  | version     | 版本号               |
+  | author      | 作者                 |
+  | description | 描述信息             |
+  | keywords    | 关键词，提升SEO      |
+  | repository  | 代码托管位置         |
+  | license     | 许可证               |
+  | homepage    | 包的主页或者文档首页 |
+  | bugs        | 用户问题反馈地址     |
+  | main        | 入口文件             |
+  | scripts     | 存放可执行脚本       |
+  |             |                      |
+
+  
